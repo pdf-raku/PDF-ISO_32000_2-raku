@@ -1,0 +1,117 @@
+{
+  "table": {
+    "caption": "Table 126 — Predefined spot functions",
+    "head": [
+      "Name",
+      "Appearance",
+      "Definition"
+    ],
+    "rows": [
+      [
+        "SimpleDot",
+        "",
+        "1−(\uD835\uDC652+\uD835\uDC662)\n{ dup mul exch dup mul add 1 exch sub }"
+      ],
+      [
+        "InvertedSimpleDot",
+        "",
+        "\uD835\uDC652+\uD835\uDC662−1\n{ dup mul exch dup mul add 1 sub }"
+      ],
+      [
+        "DoubleDot",
+        "",
+        "\uD835\uDC60\uD835\uDC56\uD835\uDC5B(360×x) 2+\uD835\uDC60\uD835\uDC56\uD835\uDC5B(360×\uD835\uDC66)2\n{ 360 mul sin 2 div exch 360 mul sin 2 div add }"
+      ],
+      [
+        "InvertedDoubleDot",
+        "",
+        "−(\uD835\uDC60\uD835\uDC56\uD835\uDC5B(360×\uD835\uDC65)2+\uD835\uDC60\uD835\uDC56\uD835\uDC5B(360×\uD835\uDC66)2)\n{ 360 mul sin 2 div exch 360 mul sin 2 div add neg }"
+      ],
+      [
+        "CosineDot",
+        "",
+        "\uD835\uDC50\uD835\uDC5C\uD835\uDC60(180×\uD835\uDC65)2+\uD835\uDC50\uD835\uDC5C\uD835\uDC60(180×\uD835\uDC66)2\n{ 180 mul cos exch 180 mul cos add 2 div }\n"
+      ],
+      [
+        "Double",
+        "",
+        "\uD835\uDC60\uD835\uDC56\uD835\uDC5B(360×\uD835\uDC652) 2+\uD835\uDC60\uD835\uDC56\uD835\uDC5B(360×\uD835\uDC66)2\n{ 360 mul sin 2 div exch 2 div 360 mul sin 2 div add }"
+      ],
+      [
+        "InvertedDouble",
+        "",
+        "−(\uD835\uDC60\uD835\uDC56\uD835\uDC5B(360×\uD835\uDC652) 2+\uD835\uDC60\uD835\uDC56\uD835\uDC5B(360×\uD835\uDC66)2)\n\n{ 360 mul sin 2 div exch 2 div 360 mul sin 2 div add neg }"
+      ],
+      [
+        "Line",
+        "",
+        "−|\uD835\uDC66|\n\n{ exch pop abs neg }"
+      ],
+      [
+        "LineX",
+        "",
+        "\uD835\uDC65\n\n{ pop }"
+      ],
+      [
+        "LineY",
+        "",
+        "\uD835\uDC66\n\n{ exch pop }"
+      ],
+      [
+        "Round",
+        "",
+        "\uD835\uDC56\uD835\uDC53 |\uD835\uDC65|+|\uD835\uDC66|≤1 \uD835\uDC61ℎ\uD835\uDC52\uD835\uDC5B 1−(\uD835\uDC652+\uD835\uDC662)\n\uD835\uDC52\uD835\uDC59\uD835\uDC60\uD835\uDC52 (|\uD835\uDC65|−1)2+(|\uD835\uDC66|−1)2−1\n\n{ abs exch abs\n2 copy add 1 le\n{ dup mul exch dup mul add 1 exch sub }\n{ 1 sub dup mul exch 1 sub dup mul add 1 sub }\nifelse }"
+      ],
+      [
+        "Ellipse",
+        "",
+        "\uD835\uDC59\uD835\uDC52\uD835\uDC61 \uD835\uDC64=(3×|\uD835\uDC65|)+(4×|\uD835\uDC66|)−3 \uD835\uDC56\uD835\uDC53 \uD835\uDC64<0 \uD835\uDC61ℎ\uD835\uDC52\uD835\uDC5B 1−\uD835\uDC652+(|\uD835\uDC66|0.75)24 \uD835\uDC52\uD835\uDC59\uD835\uDC60\uD835\uDC52 \uD835\uDC56\uD835\uDC53 \uD835\uDC64>1 \uD835\uDC61ℎ\uD835\uDC52\uD835\uDC5B (1−|\uD835\uDC65|)2+(1−|\uD835\uDC66|0.75)24−1 \uD835\uDC52\uD835\uDC59\uD835\uDC60\uD835\uDC52 0.5−\uD835\uDC64\n\n{ abs exch abs 2 copy 3 mul exch 4 mul add 3 sub dup 0 lt\n{ pop dup mul exch 0.75 div dup mul add 4 div 1 exch sub }\n{ dup 1 gt\n{ pop 1 exch sub dup mul\nexch 1 exch sub 0.75 div dup\nmul add\n4 div 1 sub }\n{ 0.5 exch sub exch pop exch pop }\nifelse }\nifelse }"
+      ],
+      [
+        "EllipseA",
+        "",
+        "1−(\uD835\uDC652+0.9×\uD835\uDC662)\n\n{ dup mul 0.9 mul exch dup mul add 1 exch sub }"
+      ],
+      [
+        "InvertedEllipseA",
+        "",
+        "\uD835\uDC652+0.9×\uD835\uDC662−1\n\n{ dup mul 0.9 mul exch dup mul add 1 sub }"
+      ],
+      [
+        "EllipseB",
+        "",
+        "1−√\uD835\uDC652+58×\uD835\uDC662\n\n{ dup 5 mul 8 div mul exch dup mul exch add sqrt 1 exch sub }"
+      ],
+      [
+        "EllipseC",
+        "",
+        "1−(0.9×\uD835\uDC652+\uD835\uDC662)\n\n{ dup mul exch dup mul 0.9 mul add 1 exch sub }"
+      ],
+      [
+        "InvertedEllipseC",
+        "",
+        "0.9×\uD835\uDC652+\uD835\uDC662−1\n\n{ dup mul exch dup mul 0.9 mul add 1 sub }"
+      ],
+      [
+        "Square",
+        "",
+        "−\uD835\uDC5A\uD835\uDC4E\uD835\uDC65 (|\uD835\uDC65|,|\uD835\uDC66|)\n\n{ abs exch abs 2 copy lt\n{ exch }\nif\npop neg }"
+      ],
+      [
+        "Cross",
+        "",
+        "−\uD835\uDC5A\uD835\uDC56\uD835\uDC5B (|\uD835\uDC65|,|\uD835\uDC66|)\n\n{ abs exch abs 2 copy gt\n{ exch }\nif\npop neg }"
+      ],
+      [
+        "Rhomboid",
+        "",
+        "0.9×|\uD835\uDC65|+|\uD835\uDC66|2\n\n{ abs exch abs 0.9 mul add 2 div }"
+      ],
+      [
+        "Diamond",
+        "",
+        "\uD835\uDC56\uD835\uDC53 |\uD835\uDC65|+|\uD835\uDC66|≤ 0.75 \uD835\uDC61ℎ\uD835\uDC52\uD835\uDC5B 1−(\uD835\uDC652+\uD835\uDC662) \uD835\uDC52\uD835\uDC59\uD835\uDC60\uD835\uDC52 \uD835\uDC56\uD835\uDC53 |\uD835\uDC65|+|\uD835\uDC66|≤1.23 \uD835\uDC61ℎ\uD835\uDC52\uD835\uDC5B 1−(0.85×|\uD835\uDC65|+|\uD835\uDC66|) \uD835\uDC52\uD835\uDC59\uD835\uDC60\uD835\uDC52 (|\uD835\uDC65|−1)2+(|\uD835\uDC66|−1)2−1\n\n{ abs exch abs 2 copy add 0.75 le\n{ dup mul exch dup mul add 1 exch sub }\n{ 2 copy add 1.23 le\n{ 0.85 mul add 1 exch sub }\n{ 1 sub dup mul exch 1 sub du mul add 1 sub }\nifelse }\nifelse }"
+      ]
+    ]
+  }
+}

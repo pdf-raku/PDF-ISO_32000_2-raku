@@ -1,0 +1,17 @@
+{
+  "table": {
+    "caption": "Table 375 — standard structure type Artifact",
+    "head": [
+      "Structure Type",
+      "Category",
+      "Description"
+    ],
+    "rows": [
+      [
+        "Artifact",
+        "Grouping, Block or Inline",
+        "(PDF 2.0) Encloses content for which semantics require a reference in the structure tree even when such content is not part of the document’s real content.\nThe Artifact structure type may be used to enclose content that would not otherwise be tagged based on the rules of tagged PDF.\nA processor of tagged PDF should normally ignore any content items and structure elements that are direct or indirect descendants of an Artifact structure element.\nEXAMPLE Some documents include pages with line numbers. Whereas for tagged PDF such line numbers would typically be considered artifacts, the Artifact structure element allows authors to ensure context is maintained by making it possible to place the line numbers in the logical structure without forcing end users to consume them as part of the logical content order."
+      ]
+    ]
+  }
+}

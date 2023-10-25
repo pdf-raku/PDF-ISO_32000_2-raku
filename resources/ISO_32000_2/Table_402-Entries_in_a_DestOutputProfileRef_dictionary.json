@@ -1,0 +1,42 @@
+{
+  "table": {
+    "caption": "Table 402 — Entries in a DestOutputProfileRef dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "CheckSum",
+        "string",
+        "(Optional, PDF 2.0) An MD5 hash consisting of a 16 byte string that is computed as described in \"7.11.4, \"Embedded file streams\" for the uncompressed ICC profile file.\nNOTE 1 Any MD5 embedded within the ICC profile itself is computed differently and is inappropriate for use as the value of the CheckSum key.\nNOTE 2 This is strictly a checksum, and is not used for security purposes."
+      ],
+      [
+        "ColorantTable",
+        "array",
+        "(Optional, PDF 2.0) An array of colourant names, each of which is encoded as a name object. The order and names of the colourants in ColorantTable is identical to those in the ICC colorantTableTag in the ICC profile."
+      ],
+      [
+        "ICCVersion",
+        "string",
+        "(Optional, PDF 2.0) The value of bytes 8 to 11, ICC profile version number, from the header of the ICC profile."
+      ],
+      [
+        "ProfileCS",
+        "string",
+        "(Optional, PDF 2.0) The four-byte colour space signature of the ICC profile, including any space characters."
+      ],
+      [
+        "ProfileName",
+        "text string",
+        "(Optional, PDF 2.0) The value of the ICC profileDescriptionTag from the ICC profile."
+      ],
+      [
+        "URLs",
+        "array",
+        "(Optional, PDF 2.0) An array, containing at least one element, where each element is an embedded file specification (7.11.4, \"Embedded file streams\") or a URL file specification (7.11.5, \"URL specifications\").\nNOTE: ICC profiles referenced via the URLs array do not have to conform to the ICCBased requirements of \"Table 67 — ICC profile types\" and thus can also support N-component output profiles."
+      ]
+    ]
+  }
+}

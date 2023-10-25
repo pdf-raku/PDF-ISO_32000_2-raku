@@ -1,0 +1,92 @@
+{
+  "table": {
+    "caption": "Table 50 — Operator categories",
+    "head": [
+      "Category",
+      "Operators",
+      "Location"
+    ],
+    "rows": [
+      [
+        "General graphics state",
+        "w, J, j, M, d, ri, i, gs, q, Q",
+        "\"Table 56 — Graphics state operators\""
+      ],
+      [
+        "Special graphics state",
+        "cm",
+        "\"Table 56 — Graphics state operators\""
+      ],
+      [
+        "Path construction",
+        "m, l, c, v, y, h, re",
+        "\"Table 58 — Path construction operators\""
+      ],
+      [
+        "Path painting",
+        "S, s, f, F, f*, B, B*, b, b*, n",
+        "\"Table 59 — Path-painting operators\""
+      ],
+      [
+        "Clipping paths",
+        "W, W*",
+        "\"Table 60 — Clipping path operators\""
+      ],
+      [
+        "Text objects",
+        "BT, ET",
+        "\"Table 105 — Text object operators\""
+      ],
+      [
+        "Text state",
+        "Tc, Tw, Tz, TL, Tf, Tr, Ts",
+        "\"Table 103 — Text state operators\""
+      ],
+      [
+        "Text positioning",
+        "Td, TD, Tm, T*",
+        "\"Table 106 — Text-positioning operators\""
+      ],
+      [
+        "Text showing",
+        "Tj, TJ, ', \"",
+        "\"Table 107 — Text-showing operators\""
+      ],
+      [
+        "Type 3 fonts",
+        "d0, d1",
+        "\"Table 111 — Type 3 font operators\""
+      ],
+      [
+        "Colour",
+        "CS, cs, SC, SCN, sc, scn, G, g, RG, rg, K, k",
+        "\"Table 73 — Colour operators\""
+      ],
+      [
+        "Shading patterns",
+        "Sh",
+        "\"Table 76 — Shading operator\""
+      ],
+      [
+        "Inline images",
+        "BI, ID, EI",
+        "\"Table 90 — Inline image operators\""
+      ],
+      [
+        "XObjects",
+        "Do",
+        "\"Table 86 — XObject operator\""
+      ],
+      [
+        "Marked-content",
+        "MP, DP, BMC, BDC, EMC",
+        "\"Table 351 — Entries in a data dictionary\""
+      ],
+      [
+        "Compatibility",
+        "BX, EX",
+        "\"Table 33 — Compatibility operators\""
+      ]
+    ]
+  }
+}

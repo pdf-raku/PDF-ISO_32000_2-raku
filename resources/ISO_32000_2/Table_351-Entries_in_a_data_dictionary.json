@@ -1,0 +1,22 @@
+{
+  "table": {
+    "caption": "Table 351 — Entries in a data dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "LastModified",
+        "date",
+        "(Required) The date and time when the contents of the document, page, or form were most recently modified by this PDF processor."
+      ],
+      [
+        "Private",
+        "(any)",
+        "(Optional) Any private data appropriate to the PDF processor, typically in the form of a dictionary."
+      ]
+    ]
+  }
+}

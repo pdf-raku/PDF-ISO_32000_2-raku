@@ -1,0 +1,47 @@
+{
+  "table": {
+    "caption": "Table 371 — Table standard structure types",
+    "head": [
+      "Structure Type",
+      "Category",
+      "Description"
+    ],
+    "rows": [
+      [
+        "Table",
+        "Block",
+        "A two-dimensional logical structure of cells, possibly including a complex substructure.\nIf a Caption is present, it is either the first or last child of the Table structure element."
+      ],
+      [
+        "TR",
+        "Internal to a Table structure",
+        "A row of table header cells (TH) or table data cells (TD) in a table."
+      ],
+      [
+        "TH",
+        "Internal to a Table structure",
+        "A table header cell containing content describing one or more rows, columns or rows and columns of the table.\nThe following attributes can be used with the TH structure element:"
+      ],
+      [
+        "TD",
+        "Internal to a Table structure",
+        "A table cell containing content that is part of the table’s content.\nThe following attributes can be used with the TD structure element:"
+      ],
+      [
+        "THead",
+        "Internal to a Table structure",
+        "(Optional) A group of TR structure elements that constitute the header of a table.\nThe THead structure element is optional insofar as when rows of header cells are present they may, but are not required to be, so enclosed."
+      ],
+      [
+        "TBody",
+        "Internal to a Table structure",
+        "(Optional) A group of TR structure elements that constitute the main body portion of a table.\nThe TBody structure element is optional insofar as when rows of cells are present they may, but are not required to be, so enclosed."
+      ],
+      [
+        "TFoot",
+        "Internal to a Table structure",
+        "(Optional) A group of TR structure elements that constitute the footer of a table.\nThe TFoot structure element is optional insofar as when rows of cells belonging to footer row(s) are present they may, but are not required to be, so enclosed."
+      ]
+    ]
+  }
+}

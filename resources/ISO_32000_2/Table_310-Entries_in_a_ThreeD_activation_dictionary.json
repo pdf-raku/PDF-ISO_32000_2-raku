@@ -1,0 +1,57 @@
+{
+  "table": {
+    "caption": "Table 310 — Entries in a 3D activation dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "A",
+        "name",
+        "(Optional) A name specifying the circumstances under which the annotation is activated. Valid values are:\nPO The annotation is activated as soon as the page containing the annotation is opened.\nPV The annotation is activated as soon as any part of the page containing the annotation becomes visible.\nXA The annotation remains inactive until explicitly activated by a script or user action.\nAt any one time, only a single page is considered open in an interactive PDF processor, even though more than one page might be visible, depending on the page layout.\nDefault value: XA.\nFor performance reasons, documents intended for viewing in a web browser uses explicit activation (XA). In non-interactive applications, such as printing systems or aggregating interactive PDF processors, PO and PV indicate that the annotation is activated when the page is printed or placed; XA indicates that the annotation never be activated and the normal appearance is used."
+      ],
+      [
+        "AIS",
+        "name",
+        "(Optional) A name specifying the state of the artwork instance upon activation of the annotation. Valid values are:\nI The artwork is instantiated, but real-time script-driven animations is disabled.\nL Real-time script-driven animations is enabled if present; if not, the artwork is instantiated.\nDefault value: L.\nIn non-interactive PDF processors, the artwork is instantiated and scripts is disabled."
+      ],
+      [
+        "D",
+        "name",
+        "(Optional) A name specifying the circumstances under which the annotation is deactivated. Valid values are:\nPC The annotation is deactivated as soon as the page is closed.\nPI The annotation is deactivated as soon as the page containing the annotation becomes invisible.\nXD The annotation remains active until explicitly deactivated by a script or user action.\nAt any one time, only a single page is considered open in an interactive PDF processor, even though more than one page might be visible, depending on the page layout.\nDefault value: PI."
+      ],
+      [
+        "DIS",
+        "name",
+        "(Optional) A name specifying the state of the artwork instance upon deactivation of the annotation. Valid values are:\nU uninstantiated\nI instantiated\nL live\nDefault value: U.\nNOTE 1 If the value of this entry is L, uninstantiation of instantiated artwork is necessary unless it has been modified. Uninstantiation is never required in non-interactive PDF processors."
+      ],
+      [
+        "TB",
+        "boolean",
+        "(Optional; PDF 1.7) A flag indicating the default behavior of an interactive toolbar associated with this annotation. If true, a toolbar is displayed by default when the annotation is activated and given focus. If false, a toolbar is not displayed by default.\nNOTE 2 Typically, a toolbar is positioned in proximity to the 3D annotation.\nDefault value: true"
+      ],
+      [
+        "NP",
+        "boolean",
+        "(Optional; PDF 1.7) A flag indicating the default behavior of the user interface for viewing or managing information about the 3D artwork. Such user interfaces can enable navigation to different views or can depict the hierarchy of the objects in the artwork (the model tree). If true, the user interface is made visible when the annotation is activated. If false, the user interface is not made visible by default.\nDefault value: false"
+      ],
+      [
+        "Style",
+        "name",
+        "(Optional; PDF 2.0) The value is either Embedded or Windowed. An interactive PDF processor shall support both Embedded and Windowed.\nDefault value: Embedded"
+      ],
+      [
+        "Window",
+        "dictionary",
+        "(Optional; PDF 2.0) A RichMediaWindow Dictionary that describes the size and position of the floating user interface window when the value for Style is set to Windowed. See \"Table 339 — Entries in a RichMediaWindow dictionary\" for a detailed description."
+      ],
+      [
+        "Transparent",
+        "boolean",
+        "(Optional; PDF 2.0) A flag that indicates whether the interactive PDF processor displays the underlying page content through the transparent areas of the rich media content (where the alpha value is less than 1.0).\nDefault value: false"
+      ]
+    ]
+  }
+}

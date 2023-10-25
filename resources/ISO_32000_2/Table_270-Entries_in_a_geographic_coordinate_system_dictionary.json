@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 270 — Entries in a geographic coordinate system dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Description"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Required; PDF 2.0) The type of PDF object that this dictionary describes. If present, is GEOGCS for a geographic coordinate system dictionary."
+      ],
+      [
+        "EPSG",
+        "integer",
+        "(Optional; PDF 2.0) An EPSG reference code specifying the geographic coordinate system. Shall not be present if WKT is present."
+      ],
+      [
+        "WKT",
+        "ASCII string",
+        "(Optional; PDF 2.0) A string of Well Known Text describing the geographic coordinate system. Shall not be present if EPSG is present."
+      ]
+    ]
+  }
+}

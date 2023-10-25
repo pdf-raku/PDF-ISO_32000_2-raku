@@ -1,0 +1,39 @@
+{
+  "table": {
+    "caption": "Table 133 — Variables used in the basic compositing formula",
+    "head": [
+      "Variable",
+      "Meaning"
+    ],
+    "rows": [
+      [
+        "\uD835\uDC36\uD835\uDC4F",
+        "Backdrop colour"
+      ],
+      [
+        "\uD835\uDC36\uD835\uDC60",
+        "Source colour"
+      ],
+      [
+        "\uD835\uDC36\uD835\uDC5F",
+        "Result colour"
+      ],
+      [
+        "\uD835\uDEFC\uD835\uDC4F",
+        "Backdrop alpha"
+      ],
+      [
+        "\uD835\uDEFC\uD835\uDC60",
+        "Source alpha"
+      ],
+      [
+        "\uD835\uDEFC\uD835\uDC5F",
+        "Result alpha"
+      ],
+      [
+        "\uD835\uDC35(\uD835\uDC36\uD835\uDC4F,\uD835\uDC36\uD835\uDC60)",
+        "Blend function"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "table": {
+    "caption": "Table 337 — Entries in a RichMediaAnimation dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Optional; PDF 2.0) The type of PDF object that this dictionary describes. If present, the type is RichMediaAnimation."
+      ],
+      [
+        "Subtype",
+        "name",
+        "(Optional; PDF 2.0) The animation style described by this dictionary. Valid values are None, Linear, and Oscillating.\nSee \"Table 313 — Animation styles\" for descriptions of these animation styles.\nIf an animation style is encountered other than those described, an animation style of None is used.\nDefault value: None"
+      ],
+      [
+        "PlayCount",
+        "integer",
+        "(Optional; PDF 2.0) An integer specifying the play count for this animation style. A nonnegative integer represents the number of times the animation is played. A negative integer indicates that the animation is infinitely repeated.\nThis value is ignored for an animation subtype of type None. Default value: -1"
+      ],
+      [
+        "Speed",
+        "number",
+        "(Optional; PDF 2.0) A positive number specifying the speed that is used when running the animation. A value greater than one shall shorten the time it takes to play the animation, or effectively speed up the animation.\nNOTE This allows authors to change the desired speed of animations without re-authoring the content.\nThis value is ignored for an animation subtype of type None. Default value: 1"
+      ]
+    ]
+  }
+}

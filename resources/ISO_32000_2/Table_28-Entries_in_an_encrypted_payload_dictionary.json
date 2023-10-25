@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 28 — Entries in an encrypted payload dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Optional) The type of PDF object that this dictionary describes; if present, is EncryptedPayload for an encrypted payload file specification."
+      ],
+      [
+        "Subtype",
+        "name",
+        "(Required) The name of the cryptographic filter used to encrypt the encrypted payload document. This allows a PDF processor to easily determine whether it has the appropriate cryptographic filter."
+      ],
+      [
+        "Version",
+        "name",
+        "(Optional) The version number of the cryptographic filter used to encrypt the encrypted payload referenced by this dictionary.\nNOTE The value of Version is not to be interpreted as a real number but as integers with a PERIOD (2Eh) between them."
+      ]
+    ]
+  }
+}

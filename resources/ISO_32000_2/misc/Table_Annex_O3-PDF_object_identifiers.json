@@ -1,0 +1,37 @@
+{
+  "table": {
+    "caption": "Table Annex O.3 — PDF object identifiers",
+    "head": [
+      "Parameter",
+      "Arguments",
+      "Description"
+    ],
+    "rows": [
+      [
+        "page",
+        "pageNum",
+        "A specified page number of the document. The argument is a positive integer number. The first page in the document has a pageNum value of 1.\nWhen used as part of a PDF open parameter, the PDF processor shall open the document to the specified page."
+      ],
+      [
+        "nameddest",
+        "name",
+        "A specified named destination (see 12.3.2.4, \"Named destinations\"). The argument provided is a string which corresponds to the name of a destination in the target document.\nWhen used as part of a PDF open parameter, the PDF processor shall open the document to the page referred to by the named destination."
+      ],
+      [
+        "structelem",
+        "structID",
+        "The structID is a byte string with URI encoding that matches the ID key within a StructElem dictionary of the document. If no content is contained within the hierarchy of the structure element or structID does not match a structure element, the first page in the document is identified.\nWhen used as part of a PDF open parameter, the PDF processor shall open to the page on which the first content item, hierarchically contained within the structure element identified by the structure ID, is located."
+      ],
+      [
+        "comment",
+        "commentID",
+        "The commentID is the value of an annotation name, which is defined by the NM key in the corresponding annotation dictionary (see 12.5.2, \"Annotation dictionaries\"). If the comment parameter is combined with another parameter that defines a specific page to be identified, then the comment parameter appears after that in the URI.\nNOTE The NM key is unique to a specific page, but is not guaranteed to be unique to a document. Unless the page on which the comment resides has been selected prior to the comment parameter, the comment will not be selected.\nWhen used as part of a PDF open parameter, the PDF processor shall open the document with the specified comment selected."
+      ],
+      [
+        "ef",
+        "name",
+        "The name argument is a byte string used to match a file specification dictionary in the EmbeddedFiles name tree. Any remaining parameters after this parameter apply to the selected embedded file.\nWhen used as part of a PDF open parameter, the PDF processor shall open the embedded file contained within the EmbeddedFiles name tree identified by name.\nSecurity is strongly considered when opening an embedded file. When opening a file that is not from a trusted source, a PDF processor may choose to prompt the user or even prevent opening of the file."
+      ]
+    ]
+  }
+}

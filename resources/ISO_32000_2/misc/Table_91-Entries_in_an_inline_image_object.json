@@ -1,0 +1,55 @@
+{
+  "table": {
+    "caption": "Table 91 — Entries in an inline image object",
+    "head": [
+      "Full Name",
+      "Abbreviation"
+    ],
+    "rows": [
+      [
+        "BitsPerComponent",
+        "BPC"
+      ],
+      [
+        "ColorSpace",
+        "CS"
+      ],
+      [
+        "Decode",
+        "D"
+      ],
+      [
+        "DecodeParms",
+        "DP"
+      ],
+      [
+        "Filter",
+        "F"
+      ],
+      [
+        "Height",
+        "H"
+      ],
+      [
+        "ImageMask",
+        "IM"
+      ],
+      [
+        "Intent (PDF 1.1)",
+        "No abbreviation"
+      ],
+      [
+        "Interpolate",
+        "I (uppercase I)"
+      ],
+      [
+        "Length (PDF 2.0)",
+        "L"
+      ],
+      [
+        "Width",
+        "W"
+      ]
+    ]
+  }
+}

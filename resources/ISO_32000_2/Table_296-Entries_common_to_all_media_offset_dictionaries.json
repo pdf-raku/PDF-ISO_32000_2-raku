@@ -1,0 +1,22 @@
+{
+  "table": {
+    "caption": "Table 296 — Entries common to all media offset dictionaries",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Optional) The type of PDF object that this dictionary describes; if present, is MediaOffset for a media offset dictionary."
+      ],
+      [
+        "S",
+        "name",
+        "(Required) The subtype of media offset dictionary. Valid values is:\nT A media offset time dictionary (see \"Table 297 — Additional entries in a media offset time dictionary\")\nF A media offset frame dictionary (see \"Table 298 — Additional entries in a media offset frame dictionary\")\nM A media offset marker dictionary (see \"Table 299 — Additional entries in a media offset marker dictionary\")\nThe rendition is non-viable if the interactive PDF processor does not recognise the value of this entry."
+      ]
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "table": {
+    "caption": "Table 219 — Additional entries specific to a transition action",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "S",
+        "name",
+        "(Required) The type of action that this dictionary describes; is Trans for a transition action."
+      ],
+      [
+        "Trans",
+        "dictionary",
+        "(Required) The transition to use for the update of the display (see \"Table 164 — Entries in a transition dictionary\")."
+      ]
+    ]
+  }
+}

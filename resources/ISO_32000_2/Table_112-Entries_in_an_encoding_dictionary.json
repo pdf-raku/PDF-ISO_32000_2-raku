@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 112 — Entries in an encoding dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Optional) The type of PDF object that this dictionary describes; if present, is Encoding for an encoding dictionary."
+      ],
+      [
+        "BaseEncoding",
+        "name",
+        "(Optional) The base encoding — that is, the encoding from which the Differences entry (if present) describes differences — is the name of one of the predefined encodings MacRomanEncoding, MacExpertEncoding, or WinAnsiEncoding (see Annex D, \"Character sets and encodings\").\nIf this entry is absent, the Differences entry describes differences from a default base encoding. For a font program that is embedded in the PDF file, the default base encoding is the font program’s built-in encoding, as described in 9.6.5, \"Character encoding\" and further elaborated in the subclauses on specific font types. Otherwise, for a nonsymbolic font, it is StandardEncoding, and for a symbolic font, it is the font’s built-in encoding."
+      ],
+      [
+        "Differences",
+        "array",
+        "(Optional; is not used with TrueType fonts) An array describing the differences from the encoding specified by BaseEncoding or, if BaseEncoding is absent from a default base encoding. The Differences array is described in subsequent subclauses."
+      ]
+    ]
+  }
+}

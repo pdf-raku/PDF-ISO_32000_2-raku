@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 64 — Entries in a Lab colour space dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "WhitePoint",
+        "array",
+        "(Required) An array of three numbers [XW YW ZW] that specifies the tristimulus value, in the CIE 1931 XYZ space, of the diffuse white point; see 8.6.5.3, \"CalRGB colour spaces\" for further discussion. The numbers XW and ZW is positive, and YW is 1.0."
+      ],
+      [
+        "BlackPoint",
+        "array",
+        "(Optional) An array of three numbers [XB YB ZB] that specifies the tristimulus value, in the CIE 1931 XYZ space, of the diffuse black point; see 8.6.5.3, \"CalRGB colour spaces\" for further discussion. All three of these numbers is non-negative. Default value: [0.0 0.0 0.0]."
+      ],
+      [
+        "Range",
+        "array",
+        "(Optional) An array of four numbers [amin amax bmin bmax] that specifies the range of valid values for the a* and b* (B and C) components of the colour space — that is, \uD835\uDC4E\uD835\uDC5A\uD835\uDC56\uD835\uDC5B≤\uD835\uDC4E∗≤\uD835\uDC4E\uD835\uDC5A\uD835\uDC4E\uD835\uDC65\nand \uD835\uDC4F\uD835\uDC5A\uD835\uDC56\uD835\uDC5B≤\uD835\uDC4F∗≤\uD835\uDC4F\uD835\uDC5A\uD835\uDC4E\uD835\uDC65\nComponent values falling outside the specified range is adjusted to the nearest valid value without error indication.\nDefault value: [-100 100 -100 100]"
+      ]
+    ]
+  }
+}

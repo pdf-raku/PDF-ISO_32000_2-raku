@@ -1,0 +1,47 @@
+{
+  "table": {
+    "caption": "Table 368 — General inline level structure types",
+    "head": [
+      "Structure Type",
+      "Category",
+      "Description"
+    ],
+    "rows": [
+      [
+        "Lbl",
+        "Inline\n",
+        "(Label) Encloses content that distinguishes it from other content inside the same parent element.\nIn a list item (see 14.8.4, \"Standard structure types\") the Lbl structure element may enclose the bullet for list items in unordered lists or digits and characters used for numbering of list items in ordered lists. For headings it may be the number of the chapter. For a definition list it may enclose the term to be defined. For key value pairs it may enclose the key for which a value is provided. For an entry in a table of contents there may be two Lbl structure elements, one for a chapter number, and one for the page number at which the chapter starts, whereas the actual text for the chapter heading is the remaining portion of the table of contents list item.\nEXAMPLE 1 The following are just a few of the possible types of content that could be marked as Lbl:"
+      ],
+      [
+        "Span",
+        "Inline",
+        "A generic inline portion of content having no particular inherent characteristics. It can be used, for example, to delimit a range of text with certain attributes.\nEXAMPLE 4 A word inside a sentence is in a different language than the surrounding text, and is contained in a Span with a Lang attribute indicating the applicable language.\nEXAMPLE 5 A custom set of structure element types defines custom inline structure elements which are mapped to the Span structure element in the RoleMap to enable a PDF processor unaware of the custom set of structure element types to essentially ignore the structure element."
+      ],
+      [
+        "Em",
+        "Inline",
+        "(PDF 2.0) (Emphasis) Encloses content for the purpose of emphasis. The level of stress that a particular piece of content has is given by its number of ancestor Em structure elements.\nThe placement of stress emphasis changes the meaning of the sentence. The element thus forms an integral part of the content. The precise way in which stress is used in this way depends on the language.\nEXAMPLE 2 These examples show how changing the stress emphasis changes the meaning. First, a general statement of fact, with no stress:\n<P>Cats are cute animals.</P>\nBy emphasizing the first word, the statement implies that the kind of animal under discussion is in question (maybe someone is asserting that dogs are cute):\n<P><Em>Cats</Em> are cute animals.</P>\nBy moving it to the adjective, the exact nature of the cats is reasserted (maybe someone suggested cats were mean animals):\n<P>Cats are <Em>cute</Em> animals.</P>"
+      ],
+      [
+        "Strong",
+        "Inline",
+        "(PDF 2.0) Encloses content for the purpose of strong importance, seriousness or urgency for its contents.\nEXAMPLE 3 In this example the Strong element is used to denote the content that the user is intended to read first:\n<P>Your tasks for today:</P>\n<L>\n<LI><LBody><Strong>Turn off the oven.</Strong></LBody> </LI>\n<LI><LBody>Put out the trash.</LBody></LI>\n<LI><LBody>Do the laundry.</LBody></LI>\n</L>"
+      ],
+      [
+        "Link",
+        "Grouping, Block or Inline",
+        "An association between content enclosed by the Link structure element and a corresponding link annotation (see 12.5.6.5, \"Link annotations\")."
+      ],
+      [
+        "Annot",
+        "Grouping, Block or Inline",
+        "Either an association between the content enclosed by the Annot structure element and one or more corresponding PDF annotations (see 12.5, \"Annotations\"), or a mechanism to include one or more PDF annotations in the structure tree.\nIf more than one annotation is referenced in an Annot structure element, they is of the same annotation type.\nAnnot is not used for link annotations (see the Link structure element) or widget annotations (see the Form structure element). All other annotation types may be referenced by this structure element.\nEXAMPLE 6 The following are just a couple of the possible types of content that could be marked as Annot:"
+      ],
+      [
+        "Form",
+        "Grouping, Block or Inline",
+        "Either an association between content enclosed by the Form structure element and a corresponding widget annotation or a mechanism to include a widget annotation in the structure tree.\nIn a tagged PDF, Form is used for each PDF widget annotation that belongs to the real content of the document.\nNOTE Form structure elements often include Lbl structure elements to mark up a form field’s label (if any).\nEXAMPLE 7 The following are the possible types of content that could be marked as Form:"
+      ]
+    ]
+  }
+}

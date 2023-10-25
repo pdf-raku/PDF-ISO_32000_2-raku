@@ -1,0 +1,106 @@
+use v6;
+role ISO_32000_2::Table_255-Entries_in_a_signature_dictionary {
+    method Type {...};
+    method Filter {...};
+    method SubFilter {...};
+    method Contents {...};
+    method Cert {...};
+    method ByteRange {...};
+    method Reference {...};
+    method Changes {...};
+    method Name {...};
+    method M {...};
+    method Location {...};
+    method Reason {...};
+    method ContactInfo {...};
+    method R {...};
+    method V {...};
+    method Prop_Build {...};
+    method Prop_AuthTime {...};
+    method Prop_AuthType {...};
+}
+
+=begin pod
+
+=head1 Description
+
+Table 255 — Entries in a signature dictionary
+
+=head1 Methods (Entries)
+
+=head2 Type [name]
+- (Optional if Sig; Required if DocTimeStamp) The type of PDF object that this dictionary describes; if present, is Sig for a signature dictionary or DocTimeStamp for a timestamp signature dictionary.
+The default value is: Sig.
+
+=head2 Filter [name]
+- (Required; inheritable) The name of the preferred signature handler to use when validating this signature. If the Prop_Build entry is not present, it is also the name of the signature handler that was used to create the signature. If Prop_Build is present, it may be used to determine the name of the handler that created the signature (which is typically the same as Filter but is not needed to be). A PDF processor may substitute a different handler when verifying the signature, as long as it supports the specified SubFilter format. Example signature handlers are Adobe.PPKLite, Entrust.PPKEF, CICI.SignIt, and VeriSign.PPKVS. The name of the filter (i.e. signature handler) is identified in accordance with the rules defined in Annex E, "Extending PDF".
+
+=head2 SubFilter [name]
+- (Optional) A name that describes the encoding of the signature value and key information in the signature dictionary. A PDF processor may use any handler that supports this format to validate the signature.
+(PDF 1.6) The following values for public-key cryptographic signatures is used: adbe.x509.rsa_sha1, adbe.pkcs7.detached, adbe.pkcs7.sha1, ETSI.CAdES.detached (PDF 2.0) and ETSI.RFC3161 (PDF 2.0).
+(PDF 2.0) When the Type of this dictionary is DocTimeStamp, the SubFilter value is ETSI.RFC3161 and when the Type of this dictionary is Sig (possibly by default) any of the values may be used except ETSI.RFC3161 (see 12.8.3, "Signature interoperability"). Other values may be defined by developers, and when used, is prefixed with the registered developer identification. All prefix names is registered (see Annex E, "Extending PDF"). The prefix "adbe" and the prefix "ETSI" have been registered by Adobe Systems and ETSI, respectively, and the subfilter names listed above and defined in 12.8.3, "Signature interoperability" and 12.8.5, "Document timestamp (DTS) dictionary" may be used by any developer.
+The values adbe.x509.rsa_sha1 and adbe.pkcs7.sha1 have been deprecated with PDF 2.0. To support backward compatibility, PDF readers should process these values for this key, but PDF writers does not use this value for this key.
+
+=head2 Contents [byte string]
+- (Required) The signature value. When ByteRange is present, the value is a hexadecimal string (see 7.3.4.3, "Hexadecimal strings") representing the value of the byte range digest.
+For public-key signatures, Contents is either a DER-encoded PKCS 1 binary data object, a DER-encoded CMS binary data object or a DER-encoded CMS SignedData binary data object.
+For document timestamp signatures, Contents is the TimeStampToken as specified in Internet RFC 3161 as updated by Internet RFC 5816. The value of the messageImprint field within the TimeStampToken is a hash of the bytes of the document indicated by the ByteRange and the ByteRange specifies the complete PDF file contents (excepting the Contents value).
+Space for the Contents value is allocated before the message digest is computed (see 7.3.4, "String objects").
+
+=head2 Cert [byte string or array]
+- (Required when SubFilter is adbe.x509.rsa_sha1) An array of byte strings that represents the X.509 certificate chain used when signing and verifying signatures that use public-key cryptography, or a byte string if the chain has only one entry. The signing certificate appears first in the array; it is used to verify the signature value in Contents, and the other certificates is used to verify the authenticity of the signing certificate.
+If SubFilter is adbe.pkcs7.detached or adbe.pkcs7.sha1, this entry is not used, and the certificate chain is put in the CMS envelope in Contents.
+If SubFilter is ETSI.CAdES.detached or ETSI.RFC3161, this entry is not used, and the certificate chain is put in the DER-encoded CMS SignedData object in Contents.
+
+=head2 ByteRange [array]
+- (Required for all signatures that are part of a signature field and usage rights signatures referenced from the UR3 entry in the permissions dictionary; is direct objects) An array of pairs of integers (starting byte offset, length in bytes) that describes the exact byte range for the digest calculation. Multiple discontiguous byte ranges is used to describe a digest that does not include the signature value (the Contents entry) itself.
+If SubFilter is ETSI.CAdES.detached or ETSI.RFC3161, the ByteRange shall cover the entire PDF file, including the signature dictionary but excluding the Contents value.
+When a byte range digest is present, all values in the signature dictionary is direct objects.
+
+=head2 Reference [array]
+- (Optional; PDF 1.5) An array of signature reference dictionaries (see "Table 256 — Entries in a signature reference dictionary"). If SubFilter is ETSI.RFC3161, this entry is not used.
+
+=head2 Changes [array]
+- (Optional) An array of three integers that specifies changes to the document that have been made between the previous signature and this signature: in this order, the number of pages altered, the number of fields altered, and the number of fields filled in.
+The ordering of signatures is determined by the value of ByteRange. Since each signature results in an incremental save, later signatures have a greater length value.
+If SubFilter is ETSI.RFC3161, this entry is not used.
+
+=head2 Name [text string]
+- (Optional) The name of the person or authority signing the document. This value is used only when it is not possible to extract the name from the signature.
+EXAMPLE 1 From the certificate of the signer.
+If SubFilter is ETSI.RFC3161, this entry is not used and is ignored by a PDF processor.
+
+=head2 M [date]
+- (Optional) The time of signing. Depending on the signature handler, this may be a normal unverified computer time or a time generated in a verifiable way from a secure time server.
+This value is used only when the time of signing is not available in the signature. If SubFilter is ETSI.RFC3161, this entry is not used and is ignored by a PDF processor.
+EXAMPLE 2 A timestamp can be embedded in a CMS binary data object (see 12.8.3.3, "CMS (PKCS 7) signatures").
+
+=head2 Location [text string]
+- (Optional) The CPU host name or physical location of the signing. If SubFilter is ETSI.RFC3161, this entry is not used and is ignored by a PDF processor.
+
+=head2 Reason [text string]
+- (Optional) The reason for the signing, such as (I agree…). If SubFilter is ETSI.RFC3161, this entry is not used and is ignored by a PDF processor.
+
+=head2 ContactInfo [text string]
+- (Optional) Information provided by the signer to enable a recipient to contact the signer to verify the signature. If SubFilter is ETSI.RFC3161, this entry is not used and is ignored by a PDF processor.
+EXAMPLE 3 A phone number.
+
+=head2 R [integer]
+- (Optional; deprecated in PDF 2.0) The version of the signature handler that was used to create the signature. (PDF 1.5) This entry is not used, and the information is stored in the Prop_Build dictionary.
+
+=head2 V [integer]
+- (Optional; PDF 1.5) The version of the signature dictionary format. It corresponds to the usage of the signature dictionary in the context of the value of SubFilter. The value is 1 if the Reference dictionary is considered critical to the validation of the signature.
+If SubFilter is ETSI.RFC3161, this V value is 0 (possibly by default).
+Default value: 0.
+
+=head2 Prop_Build [dictionary]
+- (Optional; PDF 1.5) A dictionary that may be used by a signature handler to record information that captures the state of the computer environment used for signing, such as the name of the handler used to create the signature, software build date, version, and operating system.
+The use of this dictionary is defined by Adobe PDF Signature Build Dictionary Specification, which provides implementation guidelines.
+
+=head2 Prop_AuthTime [integer]
+- (Optional; PDF 1.5) The number of seconds since the signer was last authenticated, used in claims of signature repudiation. It is omitted if the value is unknown. If SubFilter is ETSI.RFC3161, this entry is not used.
+
+=head2 Prop_AuthType [name]
+- (Optional; PDF 1.5) The method that is used to authenticate the signer, used in claims of signature repudiation. Valid values is PIN, Password, and Fingerprint. If SubFilter is ETSI.RFC3161, this entry is not used.
+
+=end pod

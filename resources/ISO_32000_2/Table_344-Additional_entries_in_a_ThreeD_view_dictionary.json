@@ -1,0 +1,22 @@
+{
+  "table": {
+    "caption": "Table 344 — Additional entries in a 3D view dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Snapshot",
+        "stream",
+        "(Optional; PDF 2.0) A stream that shall contains an image XObject (see 8.9, \"Images\") to be displayed when the view is invoked.\nDefault value: No image is used, the currently active rich media content is displayed."
+      ],
+      [
+        "Params",
+        "array",
+        "(Optional; PDF 2.0) An array containing View Params dictionaries (see 13.7.2.3.6, \"View params dictionary\").\nDefault value: an empty array.\nNOTE (2020) The Params key was accidently omitted from earlier PDF 2.0 specifications and was reinstated in this document."
+      ]
+    ]
+  }
+}

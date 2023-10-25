@@ -1,0 +1,22 @@
+{
+  "table": {
+    "caption": "Table 221 — Additional entries specific to an ECMAScript action",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "S",
+        "name",
+        "(Required) The type of action that this dictionary describes; is JavaScript for an ECMAScript action."
+      ],
+      [
+        "JS",
+        "text string or text stream",
+        "(Required) A text string or text stream containing the ECMAScript script to be executed."
+      ]
+    ]
+  }
+}

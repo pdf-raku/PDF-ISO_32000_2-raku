@@ -1,0 +1,39 @@
+{
+  "table": {
+    "caption": "Table H.2 — Objects in simple text string example",
+    "head": [
+      "Object number",
+      "Object type"
+    ],
+    "rows": [
+      [
+        "1",
+        "Catalog (document catalog)"
+      ],
+      [
+        "2",
+        "Pages (page tree node)"
+      ],
+      [
+        "3",
+        "Page (page object)"
+      ],
+      [
+        "4",
+        "Content stream"
+      ],
+      [
+        "5",
+        "Font (Type 1 font)"
+      ],
+      [
+        "6",
+        "Font (Type 1 font)"
+      ],
+      [
+        "7",
+        "Metadata (metadata stream)"
+      ]
+    ]
+  }
+}

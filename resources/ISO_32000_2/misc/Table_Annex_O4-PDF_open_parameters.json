@@ -1,0 +1,42 @@
+{
+  "table": {
+    "caption": "Table Annex O.4 — PDF open parameters",
+    "head": [
+      "Parameter",
+      "Arguments",
+      "Description"
+    ],
+    "rows": [
+      [
+        "zoom",
+        "scale scale,left,top",
+        "Open the document with the specified zoom level and optional offset. The scale argument is either an integer or floating point value representing the percentage to which the document is zoomed, where a value of 100 would correspond to a zoom of 100%.\nThe left and top arguments are optional, but shall both be specified if either is included. The left and top arguments is integer or floating point values representing the offset from the left and top of the page in a coordinate system where 0,0 represents the top left corner of the page."
+      ],
+      [
+        "view",
+        "keyword,position",
+        "Open the document with the specified destination set as the view. The arguments corresponds to those found in 12.3.2.2, \"Explicit destinations\". The keyword corresponds to one of the keywords defined in \"Table 149 — Destination syntax\" with appropriate position values."
+      ],
+      [
+        "viewrect",
+        "left,top,width,height",
+        "Open the document with the specified window view rectangle. The left and top arguments is integer or floating point values representing the offset from the left and top of the page in a coordinate system where 0,0 represents the top left corner of the page. The width and height arguments is integer or floating point values representing the width and height of the view."
+      ],
+      [
+        "highlight",
+        "left,right,top,bottom",
+        "Open the document with the specified rectangle highlighted. Each argument is an integer or floating point value representing the rectangle measured from the top left corner of the page. The nature of the highlighting is implementation-dependent."
+      ],
+      [
+        "search",
+        "wordList",
+        "Open the document and search for one or more words, selecting the first matching word in the document. The wordList argument defines the search words and is a string enclosed within quotation marks comprised of individual words separated by space characters.\nNOTE 1 Some browsers require that the space characters be encoded appropriately for a URI."
+      ],
+      [
+        "fdf",
+        "URI",
+        "Open the document and then import the data from the specified FDF or XFDF file. The URI is either a relative or absolute URI to an FDF or XFDF file.\nThe fdf parameter is specified as the last parameter to a given URI.\nNOTE 2 The fdf parameter is recommended to be the last parameter so that the document can open directly to the appropriate view."
+      ]
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "table": {
+    "caption": "Table 325 — Entries in a 3D units dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "TSm",
+        "number",
+        "(Optional; PDF 2.0) The creation time units m scale value. If omitted, TSm defaults to 1.0; if included, TU exists."
+      ],
+      [
+        "TSn",
+        "number",
+        "(Optional; PDF 2.0) The creation time units n scale value. If omitted, TSn defaults to 1.0; if included, TU exists."
+      ],
+      [
+        "TU",
+        "text string",
+        "(Optional; PDF 2.0) The creation time units value. A text string specifying a label for displaying the units represented by this dictionary in a user interface.\nNOTE 1 It is recommended that the label use a universally recognised abbreviation."
+      ],
+      [
+        "USm",
+        "number",
+        "(Optional; PDF 2.0) The user defined units m scale value. If omitted, USm defaults to 1.0; if included, UU exists."
+      ],
+      [
+        "USn",
+        "number",
+        "(Optional; PDF 2.0) The user defined units n scale value. If omitted, USn defaults to 1.0; if included, UU exists."
+      ],
+      [
+        "UU",
+        "text string",
+        "(Optional; PDF 2.0) The user override units value. A text string specifying a label for displaying the units represented by this dictionary in a user interface.\nNOTE 2 It is recommended that the label use a universally recognised abbreviation."
+      ],
+      [
+        "DSm",
+        "number",
+        "(Optional; PDF 2.0) The display units m scale value. If omitted, DSm defaults to 1.0; if included, DU exists."
+      ],
+      [
+        "DSn",
+        "number",
+        "(Optional; PDF 2.0) The display units n scale value. If omitted, DSn defaults to 1.0; if included, DU exists."
+      ],
+      [
+        "DU",
+        "text string",
+        "(Optional; PDF 2.0) The display units value. A text string specifying a label for displaying the units represented by this dictionary in a user interface.\nNOTE 3 It is recommended that the label use a universally recognised abbreviation."
+      ]
+    ]
+  }
+}

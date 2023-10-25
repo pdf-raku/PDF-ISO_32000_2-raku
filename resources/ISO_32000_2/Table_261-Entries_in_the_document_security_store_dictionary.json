@@ -1,0 +1,40 @@
+{
+  "table": {
+    "caption": "Table 261 — Entries in the document security store (DSS) dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Optional) If present, is DSS for a document security store dictionary."
+      ],
+      [
+        "VRI",
+        "dictionary",
+        "(Optional) This dictionary contains Signature VRI dictionaries (see 12.8.4.4, \"Validation-related information (VRI)\"). The key of each entry in this dictionary is the base-16-encoded (uppercase) SHA-1 digest of the signature to which it appliesa and the value is the Signature VRI dictionary which contains the validation-related information for that signature."
+      ],
+      [
+        "Certs",
+        "array",
+        "(Optional) An array of indirect reference to streams, each containing one DER-encoded X.509 certificate (see Internet RFC 5280). This array contains certificates that may be used in the validation of any signatures in the document."
+      ],
+      [
+        "OCSPs",
+        "array",
+        "(Optional) An array of indirect references to streams, each containing a DER-encoded Online Certificate Status Protocol (OCSP) response (see Internet RFC 6960). This array contains OCSPs that may be used in the validation of the signatures in the document."
+      ],
+      [
+        "CRLs",
+        "array",
+        "(Optional) An array of indirect references to streams, each containing a DER-encoded Certificate Revocation List (CRL) (see Internet RFC 5280). This array contains CRLs that may be used in the validation of the signatures in the document."
+      ],
+      [
+        "a For a document signature or document timestamp signatures, the bytes that are hashed are those of the complete hexadecimal string, including zero padding, in the Contents entry of the associated signature dictionary, containing the signature's DER-encoded binary data object (e.g. CMS or CAdES objects)."
+      ]
+    ]
+  }
+}

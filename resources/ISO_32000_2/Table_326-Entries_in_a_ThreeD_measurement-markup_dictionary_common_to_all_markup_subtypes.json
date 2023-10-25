@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 326 — Entries in a 3D measurement/markup dictionary common to all markup subtypes",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Optional; PDF 2.0) The type of PDF object that this dictionary describes; if present, it is 3DMeasure for a 3D measurement dictionary."
+      ],
+      [
+        "Subtype",
+        "name",
+        "(Required; PDF 2.0) A name specifying the measurement type for this measurement which is chosen from the following:\nLD3 A linear dimension measurement is used to denote the distance between two arbitrary points on a 3D model. See 13.6.7.3.2, \"3D linear dimension measurement\" for a listing of additional entries in this dictionary.\nPD3 A perpendicular dimension measurement is used to denote the perpendicular distance between two geometric entities (normally two lines or a point and a line). See \"Table 328 — Additional entries in a 3D measurement/markup dictionary for a 3D perpendicular dimension measurement\" for a listing of additional entries in this dictionary.\nAD3 An angular dimension measurement is used to denote the angle between two linear entities. See \"Table 329 — Additional entries in a 3D measurement/markup dictionary for a 3D angular dimension measurement\" for a listing of additional entries in this dictionary.\nRD3 A radial dimension measurement is used to define the radius or diameter of a circular 3D entity. See \"Table 330 — Additional entries in a 3D measurement/markup dictionary for a 3D radial dimension measurement\" for a listing of additional entries in this dictionary.\n3DC A 3D comment note lets users connect a comment to a specific piece of geometry in the 3D model. See \"Table 331 — Additional entries in a 3D measurement/markup dictionary for a 3D comment note\" for a listing of additional entries in this dictionary."
+      ],
+      [
+        "TRL",
+        "text string",
+        "(Optional; PDF 2.0) A name string that may be associated with a measurement markup. If omitted, an interactive PDF processor may create one.\nInteractive PDF processors that do not provide a user interface for such elements ignores this field."
+      ]
+    ]
+  }
+}

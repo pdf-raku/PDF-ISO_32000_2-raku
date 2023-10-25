@@ -1,0 +1,15 @@
+{
+  "table": {
+    "caption": "Table 148 — Names defined for an Enforce array",
+    "head": [
+      "Name",
+      "Description"
+    ],
+    "rows": [
+      [
+        "PrintScaling",
+        "(Optional; PDF 2.0) This name may appear in the Enforce array only if the corresponding entry in the viewer preferences dictionary (\"Table 147 — Entries in a viewer preferences dictionary\") specifies a valid value other than AppDefault."
+      ]
+    ]
+  }
+}

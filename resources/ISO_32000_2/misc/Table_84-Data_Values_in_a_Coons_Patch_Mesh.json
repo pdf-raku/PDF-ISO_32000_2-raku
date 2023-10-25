@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 84 — Data Values in a Coons Patch Mesh",
+    "head": [
+      "Edge Flag",
+      "Next Set of Data Values"
+    ],
+    "rows": [
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "",
+        ""
+      ],
+      [
+        "f = 3",
+        ""
+      ]
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "table": {
+    "caption": "Table 372 — Standard structure type Caption",
+    "head": [
+      "Structure Type",
+      "Category",
+      "Description"
+    ],
+    "rows": [
+      [
+        "Caption",
+        "Grouping or Block",
+        "For lists and tables a Caption structure element may be used as defined for the L (list) and Table structure elements. In addition a Caption may be used for a structure element or several structure elements.\nA structure element is understood to be \"captioned\" when a Caption structure element exists as an immediate child of that structure element. The Caption is the first or the last structure element inside its parent structure element. The number of captions cannot exceed 1.\nWhile captions are often used with figures or formulas, they may be associated with any type of content.\nNOTE In principle, captions can appear in a nested fashion. For example, several smaller images belonging to a group of images can each be accompanied by a caption, and the group of these images as a whole is accompanied by a caption as well.\nEXAMPLE The following are just a few of the possible types of content that could be marked as Caption:"
+      ]
+    ]
+  }
+}

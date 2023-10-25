@@ -1,0 +1,15 @@
+{
+  "table": {
+    "caption": "Table H.5 — Object usage after modifying text of one annotation",
+    "head": [
+      "Object identifier",
+      "Object type"
+    ],
+    "rows": [
+      [
+        "10 0",
+        "Annot (annotation dictionary)"
+      ]
+    ]
+  }
+}

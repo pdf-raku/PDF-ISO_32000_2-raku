@@ -1,0 +1,97 @@
+{
+  "table": {
+    "caption": "Table 329 — Additional entries in a 3D measurement/markup dictionary for a 3D angular dimension measurement",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "AP",
+        "array",
+        "(Required; PDF 2.0) A three-element array of numbers specifying the 3D annotation plane on which the measurement markup lies."
+      ],
+      [
+        "A1",
+        "array",
+        "(Required; PDF 2.0) A three-element array of numbers specifying the model space position of the first anchor point in world space.\nNOTE 1 It is assumed that this is a position on the 3D model associated with this view."
+      ],
+      [
+        "D1",
+        "array",
+        "(Required; PDF 2.0) A three-element array of numbers specifying the direction vector for the leader line associated with the first anchor point (A1)."
+      ],
+      [
+        "N1",
+        "text string",
+        "(Optional; PDF 2.0) The name of the part (or model tree node) associated with anchor point 1 (A1). The part name is used to verify that the part exists and is visible. If not, the measurement is not displayed. If omitted, no validation occurs."
+      ],
+      [
+        "A2",
+        "array",
+        "(Required; PDF 2.0) A three-element array of numbers specifying the model space position of the second anchor point in world space.\nNOTE 2 It is assumed that this is a position on the 3D model associated with this view."
+      ],
+      [
+        "D2",
+        "array",
+        "(Required; PDF 2.0) A three-element array of numbers specifying the direction vector for the leader line associated with the second anchor point (A2)."
+      ],
+      [
+        "N2",
+        "text string",
+        "(Optional; PDF 2.0) The name of the part (or model tree node) associated with anchor point 2 (A2). The part name is used to verify that the part exists and is visible. If not, the measurement is not displayed. If omitted, no validation occurs."
+      ],
+      [
+        "TP",
+        "array",
+        "(Required; PDF 2.0) A three-element array of numbers specifying the text anchor point for the measurement value string."
+      ],
+      [
+        "TX",
+        "array",
+        "(Required; PDF 2.0) A three-element array of numbers specifying the horizontal direction vector for the text string presenting the measurement value string."
+      ],
+      [
+        "TY",
+        "array",
+        "(Required; PDF 2.0) A three-element array of numbers specifying the up direction vector, called the text Y direction, for the text string presenting the measurement value string."
+      ],
+      [
+        "TS",
+        "number",
+        "(Optional; PDF 2.0) A number representing the measurement text string height defined in points in the default user space. The measurement text is zoom invariant.\nThe default is 12 points."
+      ],
+      [
+        "C",
+        "array",
+        "(Optional; PDF 2.0) An array of three numbers in the range 0.0 to 1.0, representing the DeviceRGB colour of the measurement markup.\nThe default value is the array [1 1 1], representing the colour white."
+      ],
+      [
+        "V",
+        "number",
+        "(Required; PDF 2.0) A numeric value representing a measurement value. This value is converted to a text string and displayed as part of the measurement text string."
+      ],
+      [
+        "P",
+        "integer",
+        "(Optional; PDF 2.0) The number of decimal digits, which represents the precision, shown for the measurement value (V).\nThe default is 3, if P is not specified."
+      ],
+      [
+        "UT",
+        "text string",
+        "(Optional; PDF 2.0) A text string defined by the user that is appended to the end of measurement value string. If omitted, no string is appended."
+      ],
+      [
+        "DR",
+        "boolean",
+        "(Optional; PDF 2.0) A flag that indicates whether degrees or radians are shown in angular measurements. If DR is true, angular measurements are shown in degrees.\nThe default is true."
+      ],
+      [
+        "S",
+        "dictionary",
+        "(Optional; PDF 2.0) A comment reference is an indirect reference to a projection annotation that may be associated with this 3D measurement. See 13.6.7.4, \"3D measurements and projection annotations\"."
+      ]
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "table": {
+    "caption": "Table 376 — Standard structure attribute owners",
+    "head": [
+      "Owner value for the attribute object’s O entry",
+      "Description"
+    ],
+    "rows": [
+      [
+        "Layout",
+        "Attributes governing the layout of content"
+      ],
+      [
+        "List",
+        "Attributes governing the numbering of lists"
+      ],
+      [
+        "PrintField",
+        "Attributes governing Form structure elements for non-interactive form fields"
+      ],
+      [
+        "Table",
+        "Attributes governing the organisation of cells in tables"
+      ],
+      [
+        "Artifact",
+        "Attributes governing Artifact structure elements"
+      ],
+      [
+        "XML-1.00",
+        "Additional attributes governing translation to XML, version 1.00"
+      ],
+      [
+        "HTML-3.20",
+        "Additional attributes governing translation to HTML, version 3.20"
+      ],
+      [
+        "HTML-4.01",
+        "Additional attributes governing translation to HTML, version 4.0"
+      ],
+      [
+        "HTML-5.00",
+        "Additional attributes governing translation to HTML, version 5.0"
+      ],
+      [
+        "OEB-1.00",
+        "Additional attributes governing translation to OEB (Open eBook), version 1.0"
+      ],
+      [
+        "RTF-1.05",
+        "Additional attributes governing translation to Microsoft Rich Text Format, version 1.05"
+      ],
+      [
+        "CSS-1",
+        "Additional attributes governing translation to a format using CSS, version 1"
+      ],
+      [
+        "CSS-2",
+        "Additional attributes governing translation to a format using CSS, version 2.1"
+      ],
+      [
+        "CSS-3",
+        "Additional attributes governing translation to a format using CSS, version 3"
+      ],
+      [
+        "RDFa-1.10",
+        "Additional attributes governing translation to a format using RDFa version 1.1"
+      ],
+      [
+        "ARIA-1.1",
+        "Additional attributes governing translation to a format using WAI-ARIA version 1.1"
+      ]
+    ]
+  }
+}

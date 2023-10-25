@@ -1,0 +1,22 @@
+{
+  "table": {
+    "caption": "Table 206 — Entries in a GoToDp dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "S",
+        "name",
+        "(Required; PDF 2.0) The type of action that this dictionary describes; is GoToDp for a go-to document part action."
+      ],
+      [
+        "Dp",
+        "dictionary",
+        "(Required; PDF 2.0) The indirect reference to a DPart dictionary to go to."
+      ]
+    ]
+  }
+}

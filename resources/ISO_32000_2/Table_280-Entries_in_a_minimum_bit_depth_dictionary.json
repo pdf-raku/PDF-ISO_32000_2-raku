@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 280 — Entries in a minimum bit depth dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Optional) The type of PDF object that this dictionary describes; if present, is MinBitDepth for a minimum bit depth dictionary."
+      ],
+      [
+        "V",
+        "integer",
+        "(Required) A positive integer specifying the minimum screen depth (in bits) of the monitor for the rendition to be viable."
+      ],
+      [
+        "M",
+        "integer",
+        "(Optional) A monitor specifier (see \"Table 304 — Monitor specifier values\") that specifies which monitor the value of V is tested against. If the value is unrecognised, the object is not viable.\nDefault value: 0."
+      ]
+    ]
+  }
+}

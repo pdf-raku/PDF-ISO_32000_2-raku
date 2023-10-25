@@ -1,0 +1,32 @@
+{
+  "table": {
+    "caption": "Table 222 — Additional entries specific to a rich-media-execute action",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "S",
+        "name",
+        "(Required; PDF 2.0) The type of action that this dictionary describes; is RichMediaExecute for a rich-media-execute action."
+      ],
+      [
+        "TA",
+        "dictionary",
+        "(Required; PDF 2.0) An indirect object reference to an annotation dictionary (of Subtype RichMedia) upon which to execute the command."
+      ],
+      [
+        "TI",
+        "dictionary",
+        "(Optional; PDF 2.0) A dictionary that is an indirect object reference to a RichMediaInstance dictionary that is also present in the Instances array of the annotation."
+      ],
+      [
+        "CMD",
+        "dictionary",
+        "(Required; PDF 2.0) A RichMediaCommand dictionary containing the command name and arguments to be executed when the rich-media-execute action is invoked. See \"Table 223 — Entries in a RichMediaCommand dictionary\"."
+      ]
+    ]
+  }
+}

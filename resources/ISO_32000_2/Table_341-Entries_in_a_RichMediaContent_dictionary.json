@@ -1,0 +1,32 @@
+{
+  "table": {
+    "caption": "Table 341 — Entries in a RichMediaContent dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Optional; PDF 2.0) The type of PDF object that this dictionary describes. If present, it is RichMediaContent."
+      ],
+      [
+        "Assets",
+        "name tree",
+        "(Optional; PDF 2.0) A name tree of embedded file specification dictionaries as detailed in 7.11.3, \"File specification dictionaries\"."
+      ],
+      [
+        "Configurations",
+        "array",
+        "(Optional; PDF 2.0) An array where each element is an indirect object reference to a RichMediaConfiguration dictionary."
+      ],
+      [
+        "Views",
+        "array",
+        "(Optional; PDF 2.0) An array where each element is an indirect object reference to a 3D view dictionary. See \"Table 315 — Entries in a 3D view dictionary\" for the details of the entries of this dictionary.\nDefault value: If no views are specified, default values is used for the components of a view dictionary, including rendering/lighting modes, background colour, and camera data."
+      ]
+    ]
+  }
+}

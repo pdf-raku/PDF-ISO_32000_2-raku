@@ -1,0 +1,43 @@
+{
+  "table": {
+    "caption": "Table Annex L.1 — Legend for Table L.2",
+    "head": [
+      "Value",
+      "Valid usage relative to other standard structure types"
+    ],
+    "rows": [
+      [
+        "ø",
+        "does not occur"
+      ],
+      [
+        "ø*",
+        "does not occur unless the parent element is used as a grouping level element"
+      ],
+      [
+        "0..n",
+        "may be a child element with one or several occurrences, but is not required to be present"
+      ],
+      [
+        "1..n",
+        "is present as a child element with one or several occurrences"
+      ],
+      [
+        "0..1",
+        "may occur, but not more than once"
+      ],
+      [
+        "‡",
+        "for containment rules, refer to the respective structure element type’s description"
+      ],
+      [
+        "[a]",
+        "for specific provisions when and how these structure elements or content can be contained inside a Ruby structure element see 14.8.4.7.3, \"Ruby and warichu elements\""
+      ],
+      [
+        "[b]",
+        "for specific provisions when and how these structure elements or content can be contained inside a Warichu structure element see 14.8.4.7.3, \"Ruby and warichu elements\"."
+      ]
+    ]
+  }
+}

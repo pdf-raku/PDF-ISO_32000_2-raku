@@ -1,0 +1,22 @@
+{
+  "table": {
+    "caption": "Table 48 — Entries in an extensions dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Optional; , is a direct objectif present) The type of PDF object that this dictionary describes; if present, is Extensions."
+      ],
+      [
+        "Prefix name",
+        "array or dictionary",
+        "(Required; PDF 1.7; is a direct object) A developer extensions dictionary, or an array of developer extension dictionaries (PDF 2.0), denoting extensions used (See \"Table 49 — Entries in a developer extensions dictionary\"). The key is a registered prefix name as described in Annex E, “Extending PDF\".\nThis entry is repeated for each different developer’s extensions used. Multiple distinct registered prefix names for different developers may be used for each different developer’s extensions used. See Example 3 below.\nNOTE Arrays of developer extension dictionaries were introduced in this document (2020)."
+      ]
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 370 — List standard structure types",
+    "head": [
+      "Structure Type",
+      "Category",
+      "Description"
+    ],
+    "rows": [
+      [
+        "L",
+        "Block or Inline",
+        "(List) Encloses content consisting of a sequence of items that are semantically related with each other.\nIf a Caption is present, it is either the first or last child in the L (list) structure element.\nThe ListNumbering attribute (see 14.8.5.5, \"List attribute\") may be used to indicate the type of ordered or unordered list.\nThe ContinuedList and ContinuedFrom attributes (see 14.8.5.5, \"List attributes\") may be used to indicate relationships with other L (list) structure elements.\nEXAMPLE 1 Bulleted lists, numbered lists, tables of contents, indexes, dictionaries, and lists of key value pairs are all examples of content that would use the L structure element."
+      ],
+      [
+        "LI",
+        "Internal to L (List) structure elements",
+        "(List Item) Encloses content for an individual member of a list. Children (see Annex L, \"Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0\") of the list item may occur in any order or combination.\nNOTE LI structure elements often include Lbl structure elements (see Table 368 — General inline level structure types) to mark up a list item's label (if any)."
+      ],
+      [
+        "LBody",
+        "Internal to LI (List item) structure elements",
+        "(List Item Body) Encloses the actual content of a list item.\nEXAMPLE 2 In a dictionary list the list item body contains the translation or definition of the term."
+      ]
+    ]
+  }
+}

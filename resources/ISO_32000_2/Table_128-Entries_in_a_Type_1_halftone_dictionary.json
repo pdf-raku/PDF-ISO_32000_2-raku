@@ -1,0 +1,52 @@
+{
+  "table": {
+    "caption": "Table 128 — Entries in a Type 1 halftone dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Optional) The type of PDF object that this dictionary describes; if present, is Halftone for a halftone dictionary."
+      ],
+      [
+        "HalftoneType",
+        "integer",
+        "(Required) A code identifying the halftone type that this dictionary describes; is 1 for this type of halftone."
+      ],
+      [
+        "HalftoneName",
+        "byte string",
+        "(Optional) The name of the halftone dictionary."
+      ],
+      [
+        "Frequency",
+        "number",
+        "(Required) The screen frequency, measured in halftone cells per inch in device space."
+      ],
+      [
+        "Angle",
+        "number",
+        "(Required) The screen angle, in degrees of rotation counterclockwise with respect to the device coordinate system.\nNOTE Most output devices have left-handed device spaces. On such devices, a counterclockwise angle in device space corresponds to a clockwise angle in default user space and on the physical medium."
+      ],
+      [
+        "SpotFunction",
+        "function, name or array",
+        "(Required) A function object defining the order in which device pixels within a screen cell is adjusted for different gray levels, or the name of a spot function, or an array of names of spot functions (PDF 2.0). A name is one of the predefined spot functions (see \"Table 126 — Predefined spot functions\"). If the value of SpotFunction is an array the PDF processor uses the first name within the array that it recognizes. If a name is provided that is not defined in \"Table 126 — Predefined spot functions\" and the PDF processor does not understand that name, or if none of the names in an array are defined in \"Table 126 — Predefined spot functions\" or are understood by the PDF processor, the processor uses the default halftone."
+      ],
+      [
+        "AccurateScreens",
+        "boolean",
+        "(Optional) A flag specifying whether to invoke a special halftone algorithm that is extremely precise but computationally expensive; see Note 1 for further discussion. Default value: false."
+      ],
+      [
+        "TransferFunction",
+        "function or name",
+        "(Optional) A transfer function, which overrides the current transfer function in the graphics state for the same component. This entry is present if the dictionary is a component of a Type 5 halftone (see 10.6.5.6, \"Type 5 halftones\") and represents either a nonprimary or nonstandard primary colour component (see 10.5, \"Transfer functions\"). The name Identity may be used to specify the identity function. The TransferFunction key is only be used to convey tone reproduction compensation (sometimes called gamma curve correction); it is not used to specify artistic intent. If the key is required by some other clause in this document but no compensation is necessary then the value is the name Identity."
+      ]
+    ]
+  }
+}

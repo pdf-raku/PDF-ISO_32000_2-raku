@@ -1,0 +1,32 @@
+{
+  "table": {
+    "caption": "Table 236 — Entries in a signature field lock dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Optional) The type of PDF object that this dictionary describes; if present, is SigFieldLock for a signature field lock dictionary."
+      ],
+      [
+        "Action",
+        "name",
+        "(Required) A name which, in conjunction with Fields, indicates the set of fields that is locked. The value is one of the following:\nAll All fields in the document\nInclude All fields specified in Fields\nExclude All fields except those specified in Fields"
+      ],
+      [
+        "Fields",
+        "array",
+        "(Required if the value of Action is Include or Exclude) An array of text strings containing field names."
+      ],
+      [
+        "P",
+        "number",
+        "(Optional; PDF 2.0) The access permissions granted for this document. Valid values is:\n1 No changes to the document are permitted; any change to the document invalidates the signature.\n2 Permitted changes is filling in forms, instantiating page templates, and signing; other changes invalidates the signature.\n3 Permitted changes are the same as for 2, as well as annotation creation, deletion, and modification; other changes invalidates the signature.\nThere is no default value; absence of this key shall result in no effect on signature validation rules.\nIf MDP permission is already in effect from an earlier incremental save section or the original part of the document, the number specifies permissions less than or equal to the permissions already in effect based on signatures earlier in the document. That is, permissions can be denied but not added. If the number specifies greater permissions than an MDP value already in effect, the new number is ignored.\nIf the document does not have an author signature, the initial permissions in effect are those based on the number 3.\nThe new permission applies to any incremental changes to the document following the signature of which this key is part."
+      ]
+    ]
+  }
+}

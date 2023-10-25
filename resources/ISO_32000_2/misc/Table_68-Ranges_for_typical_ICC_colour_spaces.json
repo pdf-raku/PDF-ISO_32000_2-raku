@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 68 — Ranges for typical ICC colour spaces",
+    "head": [
+      "ICC Colour Space",
+      "Component Ranges"
+    ],
+    "rows": [
+      [
+        "Gray",
+        "[0.0 1.0]"
+      ],
+      [
+        "RGB",
+        "[0.0 1.0]"
+      ],
+      [
+        "CMYK",
+        "[0.0 1.0]"
+      ],
+      [
+        "L*a*b*",
+        "\uD835\uDC3F∗: [0 100]; a∗ and \uD835\uDC4F∗: [−128 127]"
+      ]
+    ]
+  }
+}

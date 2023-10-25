@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 89 — Entries in an alternate image dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Image",
+        "stream",
+        "(Required) The image XObject for the alternate image."
+      ],
+      [
+        "DefaultForPrinting",
+        "boolean",
+        "(Optional) A flag indicating whether this alternate image is the default version to be used for printing according to the algorithm described below. At most one alternate for a given base image is so designated. Default value: false."
+      ],
+      [
+        "OC",
+        "dictionary",
+        "(Optional; PDF 1.5) An optional content group (see 8.11.2, \"Optional content groups\") or optional content membership dictionary (see 8.11.2.2, \"Optional content membership dictionaries\") that facilitates the selection of which alternate image to use."
+      ]
+    ]
+  }
+}

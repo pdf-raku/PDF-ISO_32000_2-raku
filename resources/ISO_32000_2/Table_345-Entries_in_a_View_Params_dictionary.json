@@ -1,0 +1,22 @@
+{
+  "table": {
+    "caption": "Table 345 — Entries in a View Params dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Instance",
+        "dictionary",
+        "(Required; PDF 2.0) A dictionary that is an indirect object reference to a RichMediaInstance dictionary that is also present in the Instances array of the annotation."
+      ],
+      [
+        "Data",
+        "text string or stream",
+        "(Required; PDF 2.0) A text string or stream containing state data that is passed to the instance when the view is triggered."
+      ]
+    ]
+  }
+}

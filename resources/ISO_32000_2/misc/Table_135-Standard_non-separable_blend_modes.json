@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 135 — Standard non-separable blend modes",
+    "head": [
+      "Name",
+      "Result"
+    ],
+    "rows": [
+      [
+        "Hue",
+        "\uD835\uDC35(\uD835\uDC36\uD835\uDC4F,\uD835\uDC36\uD835\uDC60)=SetLum(SetSat(\uD835\uDC36\uD835\uDC60,Sat(\uD835\uDC36\uD835\uDC4F)),Lum(\uD835\uDC36\uD835\uDC4F))\nNOTE 1 Creates a colour with the hue of the source colour and the saturation and luminosity of the backdrop colour."
+      ],
+      [
+        "Saturation",
+        "\uD835\uDC35(\uD835\uDC36\uD835\uDC4F,\uD835\uDC36\uD835\uDC60)=SetLum(SetSat(\uD835\uDC36\uD835\uDC4F,Sat(\uD835\uDC36\uD835\uDC60)),Lum(\uD835\uDC36\uD835\uDC4F))\nNOTE 2 Creates a colour with the saturation of the source colour and the hue and luminosity of the backdrop colour. Painting with this mode in an area of the backdrop that is a pure gray (no saturation) produces no change."
+      ],
+      [
+        "Color",
+        "\uD835\uDC35(\uD835\uDC36\uD835\uDC4F,\uD835\uDC36\uD835\uDC60)=SetLum(\uD835\uDC36\uD835\uDC60, Lum(\uD835\uDC36\uD835\uDC4F))\nNOTE 3 Creates a colour with the hue and saturation of the source colour and the luminosity of the backdrop colour. This preserves the gray levels of the backdrop and is useful for colouring monochrome images or tinting colour images."
+      ],
+      [
+        "Luminosity",
+        "\uD835\uDC35(\uD835\uDC36\uD835\uDC4F,\uD835\uDC36\uD835\uDC60)=SetLum(\uD835\uDC36\uD835\uDC4F, Lum(\uD835\uDC36\uD835\uDC60))\nNOTE 4 Creates a colour with the luminosity of the source colour and the hue and saturation of the backdrop colour. This produces an inverse effect to that of the Color mode."
+      ]
+    ]
+  }
+}

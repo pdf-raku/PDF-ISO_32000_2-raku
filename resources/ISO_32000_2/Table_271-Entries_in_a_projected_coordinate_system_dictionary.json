@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 271 — Entries in a projected coordinate system dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Description"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Required; PDF 2.0) The type of PDF object that this dictionary describes; is PROJCS for a projected coordinate system dictionary."
+      ],
+      [
+        "EPSG",
+        "integer",
+        "(Optional; PDF 2.0) An EPSG reference code specifying the projected coordinate system."
+      ],
+      [
+        "WKT",
+        "ASCII string",
+        "(Optional; PDF 2.0) A string of Well Known Text describing the projected coordinate system."
+      ]
+    ]
+  }
+}

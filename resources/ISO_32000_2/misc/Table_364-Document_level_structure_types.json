@@ -1,0 +1,22 @@
+{
+  "table": {
+    "caption": "Table 364 — Document level structure types",
+    "head": [
+      "Structure Type",
+      "Category",
+      "Description"
+    ],
+    "rows": [
+      [
+        "Document",
+        "Document",
+        "Encloses a logical document.\nEXAMPLE 1 A mail merge PDF typically contains a number of letters to different recipients. This implies that the PDF at the top level is one document, containing multiple documents at its child level where each such document is a letter to a recipient.\nEXAMPLE 2 A Proceedings PDF generally includes individual papers given at a conference. This implies that the PDF at the top level is one document containing several documents."
+      ],
+      [
+        "DocumentFragment",
+        "Document",
+        "(PDF 2.0) Encloses a logical document fragment.\nA document fragment is typically created by extracting it as a part from an original complete document. As a consequence the structure of the fragment may be incomplete, and content may start at an arbitrary point within the original logical content structure.\nEXAMPLE 3 The following are just two possible types of document fragments:"
+      ]
+    ]
+  }
+}

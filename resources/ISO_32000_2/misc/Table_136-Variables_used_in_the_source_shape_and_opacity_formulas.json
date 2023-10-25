@@ -1,0 +1,43 @@
+{
+  "table": {
+    "caption": "Table 136 — Variables used in the source shape and opacity formulas",
+    "head": [
+      "Variable",
+      "Meaning"
+    ],
+    "rows": [
+      [
+        "\uD835\uDC87\uD835\uDC94",
+        "Source shape"
+      ],
+      [
+        "\uD835\uDC87\uD835\uDC8B",
+        "Object shape"
+      ],
+      [
+        "\uD835\uDC87\uD835\uDC8E",
+        "Mask shape"
+      ],
+      [
+        "\uD835\uDC87\uD835\uDC8C",
+        "Constant shape"
+      ],
+      [
+        "\uD835\uDC92\uD835\uDC94",
+        "Source opacity"
+      ],
+      [
+        "\uD835\uDC92\uD835\uDC8B",
+        "Object opacity"
+      ],
+      [
+        "\uD835\uDC92\uD835\uDC8E",
+        "Mask opacity"
+      ],
+      [
+        "\uD835\uDC92\uD835\uDC8C",
+        "Constant opacity"
+      ]
+    ]
+  }
+}

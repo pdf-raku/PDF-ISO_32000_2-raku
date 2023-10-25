@@ -1,0 +1,47 @@
+{
+  "table": {
+    "caption": "Table C.1 — Architectural considerations",
+    "head": [
+      "Quantity",
+      "Description"
+    ],
+    "rows": [
+      [
+        "Integers",
+        "Integer values (such as object numbers) can often be expressed within 32 bits."
+      ],
+      [
+        "Real numbers",
+        "Modern computers often represent and process real numbers using IEEE Standard for Floating-Point Arithmetic (IEEE 754) single or double precision."
+      ],
+      [
+        "Size of arrays",
+        "Although a PDF array object (7.3.6, \"Array objects\") can theoretically contain any number of elements, PDF processors are likely to have some limitations."
+      ],
+      [
+        "Size of dictionaries",
+        "Although a PDF dictionary object (7.3.7, \"Dictionary objects\") can theoretically contain any number of key/value pairs, PDF processors are likely to have some limitations."
+      ],
+      [
+        "Number of spot colours",
+        "In previous versions of the PDF, it was recommended that the maximum number of colourants or tint components in a single DeviceN colour space (8.6.6.5, \"DeviceN colour spaces\") be limited to 32."
+      ],
+      [
+        "Nested objects",
+        "As described in this PDF standard, many constructs can be nested including stitching functions, q/Q operators, XObjects, article threads, etc. However PDF processors may implement recursive algorithms which may cause issues for excessively nested constructs.\nNOTE In previous versions of PDF, a maximum depth of graphics state nesting by q and Q operators was 28. This arose from the fact that q and Q can be implemented by the PostScript language gsave and grestore operators when generating PostScript language output."
+      ],
+      [
+        "Name objects",
+        "In previous versions of PDF, it was recommended that the maximum length of the internal representation of a name object was limited 127 bytes."
+      ],
+      [
+        "Length of a string object in a content stream",
+        "In previous versions of PDF, it was recommended that the maximum length of a string in a content stream was limited to 32,767. This restriction applied only to strings in content streams. There were no effective restrictions on other strings in PDF files."
+      ],
+      [
+        "CID",
+        "In previous versions of PDF, it was recommended that the maximum value of a CID (character identifier) was limited to 65,535."
+      ]
+    ]
+  }
+}

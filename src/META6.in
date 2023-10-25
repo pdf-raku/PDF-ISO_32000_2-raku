@@ -1,0 +1,18 @@
+{
+  "auth" : "zef:dwarring",
+  "authors" : [
+    "David Warring"
+  ],
+  "depends" : [ "JSON::Fast", "Method::Also" ],
+  "description" : "PDF 2.0 Tables and roles, mined from the PDF ISO-32000-2 specification",
+  "license" : "Artistic-2.0",
+  "name" : "PDF::ISO_32000_2",
+  "perl" : "6.*",
+  "provides" : {
+  },
+  "resources" : [ ],
+  "source-url" : "git://github.com/pdf-raku/PDF-ISO_32000_2-raku.git",
+  "tags" : [ "pdf" ],
+  "test-depends" : [ ],
+  "version" : "0.0.1"
+}

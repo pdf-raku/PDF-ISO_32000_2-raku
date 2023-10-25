@@ -1,0 +1,17 @@
+{
+  "table": {
+    "caption": "Table 373 — Standard structure type Figure",
+    "head": [
+      "Structure Type",
+      "Category",
+      "Description"
+    ],
+    "rows": [
+      [
+        "Figure",
+        "Grouping, Block or Inline",
+        "Encloses graphical content.\nThe BBox attribute (see 14.8.5, \"Standard structure attributes\") is present for a figure appearing in its entirety on a single page to indicate the area of the figure on the page.\nEXAMPLE 1 Some examples of content that would be marked as Figure include:"
+      ]
+    ]
+  }
+}

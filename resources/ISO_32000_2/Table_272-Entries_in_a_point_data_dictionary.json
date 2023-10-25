@@ -1,0 +1,32 @@
+{
+  "table": {
+    "caption": "Table 272 — Entries in a point data dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Description"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Required; PDF 2.0) The type of PDF object that this dictionary describes; is PtData for a point data dictionary."
+      ],
+      [
+        "Subtype",
+        "name",
+        "(Required; PDF 2.0) Shall be Cloud."
+      ],
+      [
+        "Names",
+        "array",
+        "(Required; PDF 2.0) An array of names that identify the internal data elements of the individual point arrays in the XPTS array.\nThere are three predefined names:\nLAT latitude in degrees. The XPTS value is a number type.\nLON longitude in degrees. The XPTS value is a number type.\nALT altitude in metres. The XPTS value is a number type.\nNOTE These names are, in effect, column headers for the array of XPTS values."
+      ],
+      [
+        "XPTS",
+        "array",
+        "(Required; PDF 2.0) An array of arrays of values. The number of members in each interior array corresponds to the size of the Names array; each member in the interior arrays is of a type defined by the corresponding name in the Names array.\nThe XPTS array is a collection of tuples without any guaranteed ordering or relationship from point to point."
+      ]
+    ]
+  }
+}

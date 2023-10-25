@@ -1,0 +1,111 @@
+{
+  "table": {
+    "caption": "Table 275 — Requirement types",
+    "head": [
+      "Type",
+      "Description"
+    ],
+    "rows": [
+      [
+        "OCInteract",
+        "Requires an interactive PDF processor to be able to display the list of optional content groups (OCGs) in the Order array as described in \"Table 99 — Entries in an optional content configuration dictionary\".\nIn addition, requires that an interactive PDF processor support the SetOCGState action (see 12.6.4.13, \"Set-OCG-state actions\").\nAdditional information about OCGs can be found in 8.11.2, \"Optional content groups\" and 8.11.4.4, \"Usage and usage application dictionaries\"."
+      ],
+      [
+        "OCAutoStates",
+        "Requires an interactive PDF processor to implement the various Usage values that can be present as the value of the AS key in an OCD as described in \"Table 99 — Entries in an optional content configuration dictionary\" and 8.11.4.4, \"Usage and usage application dictionaries\"."
+      ],
+      [
+        "AcroFormInteract",
+        "Requires support for user interaction with forms (see 12.7, \"Forms\") defined as interactive form dictionaries including updating field appearances when values change. In addition, support for Trigger Actions (12.6.3, \"Trigger events\") is required.\nNOTE 1 This requirement does not cover presentation of a form’s static appearance. That presentation uses annotation appearances (12.5.5, \"Appearance streams\"), which all PDF processors are assumed to support."
+      ],
+      [
+        "Navigation",
+        "Requires support for the presentation and handling of basic navigational elements including link annotations (12.5.6.5, \"Link annotations\") and outlines (12.3.3, \"Document outline\"). In addition, support is provided for GoTo, GoToR and URI actions (12.6.4, \"Action types\") in any of these elements or as a document, page or annotation trigger events (12.6.3, \"Trigger events\")."
+      ],
+      [
+        "Markup",
+        "Requires support for the creation, modification and deletion of markup annotations (12.5.6.2, \"Markup annotations\") including text annotations. In addition, any time the visual appearance of the annotation changes, the appearance stream is updated."
+      ],
+      [
+        "3DMarkup",
+        "Requires support for the creation, modification and deletion of text notes and markup annotations on 3D objects (13.6.7.3.6, \"3D comment note\"). In addition, any time where the visual appearance of the annotation changes, the appearance stream is updated."
+      ],
+      [
+        "Multimedia",
+        "Requires support for multimedia (Screen) annotations (12.5.6.18, \"Screen annotations\"). See also 13.2, \"Multimedia\". The support that is required is for the general multimedia framework, not for an external player for any specific type of multimedia content. Negotiation of the choice of an external player is handled by the must honour (MH) and best efforts (BE) mechanism (13.2.2, \"Viability\") that is defined as part of the multimedia framework (13.2, \"Multimedia\")."
+      ],
+      [
+        "U3D",
+        "Requires support for 3D data streams conforming to the U3D specification. This applies to the use of U3D in either 3D (13.6.3, \"3D streams\") or RichMedia annotations (13.7.2.2, \"RichMediaSettings dictionary\"). This also includes support for associated ECMAScripts.\nIf a V key is present in its Requirements dictionary, it represents the version of U3D and not the PDF version."
+      ],
+      [
+        "PRC",
+        "Requires support for 3D data streams conforming to the PRC specification. This applies to the use of PRC in either 3D (13.6.3, \"3D streams\") or RichMedia annotations (13.7.2.2, \"RichMediaSettings dictionary\"). This also includes support for associated ECMAScripts.\nIf a V key is present in its Requirements dictionary, it represents the version of PRC and not the PDF version."
+      ],
+      [
+        "Action",
+        "Requires support for actions in general (12.6, \"Actions\"), other than GoTo and URI actions (which are subsumed under the Navigation and Attachment requirements), SetOCGState (subsumed under OCInteract) and ECMAScript actions (which are separately declared with the EnableJavaScripts requirement)."
+      ],
+      [
+        "EnableJavaScripts",
+        "Requires support for execution of ECMAScripts appearing in ECMAScript actions and in the ECMAScript name tree for document-level ECMAScripts.\nNOTE 2 ECMAScripts contained in 3D & RichMedia annotations are handled by their respective requirements."
+      ],
+      [
+        "Attachment",
+        "Requires support for displaying (to the user) the list of file attachments (see 7.11.4, \"Embedded file streams\") and enabling users to extract any existing attachments. In addition, support is provided for GoToE actions (12.6.4, \"Action types\") when located in any navigational element or trigger event.\nNOTE 3 The list of file attachments is taken from the EmbeddedFiles names tree (see 7.7.4, \"Name dictionary\") and any FileAttachment annotation (see 12.5.6.15, \"File attachment annotations\")."
+      ],
+      [
+        "AttachmentEditing",
+        "In addition to the requirements of the Attachment value, support for adding new attachments into the EmbeddedFiles names tree (see 7.7.4, \"Name dictionary\"), deleting existing ones as well as modification of attachment attributes (e.g., name & description) are also required."
+      ],
+      [
+        "Collection",
+        "Requires support for displaying the embedded files referenced from the document’s collection dictionary (12.3.5, \"Collections\") along with any associated metadata. Also requires that the user can extract or otherwise view the contents of each item in the collection.\n(PDF 2.0) For unencrypted wrapper documents for an encrypted payload document (see 7.6.7, \"Unencrypted wrapper document\") the Collection requirement is not specified for the unencrypted wrapper document.\nNOTE 4 Although the unencrypted wrapper document is a collection, the intent of the wrapper is to enable PDF processors that are unable to decrypt the embedded encrypted payload document to present the content of the unencrypted wrapper document to assist users in understanding the cryptographic requirements of the encrypted payload document. Specifying the Collection requirement on the wrapper could discourage PDF processors incapable of displaying collections from presenting the unencrypted wrapper content."
+      ],
+      [
+        "CollectionEditing",
+        "In addition to the requirements of the Collection value, support for adding to the collection (12.3.5, \"Collections\"), deleting existing items as well as modification of collection item attributes and metadata, are also required."
+      ],
+      [
+        "DigSigValidation",
+        "Requires support for the validation of digital signatures (both document and certifying) that have been applied to the PDF including the handling of supplied revocation information. See 12.8, \"Digital signatures\", and 12.8.3.4.5, \"Requirements for validation of PAdES signatures\".\nThis does not require the support for 12.8.2.2.2, \"Validating signatures that use the DocMDP transform method\" which is a separate requirement: DigSigMDP."
+      ],
+      [
+        "DigSig",
+        "In addition to the validation requirements of DigSigValidation, this specifies the requirements to support the application of a digital signature to a document (also known as signing). See 12.8, \"Digital signatures\"."
+      ],
+      [
+        "DigSigMDP",
+        "In addition to the requirements of DigSig and DigSigValidation, this also requires support for modification detection analysis to determine if only allowable modifications have been made. See 12.8.2.2.2, \"Validating signatures that use the DocMDP transform method\"."
+      ],
+      [
+        "RichMedia",
+        "Requires support for playing rich media annotations as specified in 13.7.2, \"RichMedia annotations\"."
+      ],
+      [
+        "Geospatial2D",
+        "Requires support for processing provided geospatial information in the page content and associated resources. See 12.10, \"Geospatial features\"."
+      ],
+      [
+        "Geospatial3D",
+        "Requires support for processing provided geospatial information in any 3D annotations. See 12.10, \"Geospatial features\". This type requires provision within the 3D Annotation, and also applies 3D requirements to Geospatial information."
+      ],
+      [
+        "DPartInteract",
+        "Requires support for the display of the DParts hierarchy and its use for navigation of the document parts. See 14.12, \"Document parts\"."
+      ],
+      [
+        "SeparationSimulation",
+        "Requires support for simulation separations as described in 10.8, \"Rendering for separations\" and 10.8.3, \"Separation simulation\".\nNOTE 5 This is sometimes referred to as \"Overprint Preview\"."
+      ],
+      [
+        "Transitions",
+        "Requires support for transitions/presentations (12.4.4, \"Presentations\") as well as transition actions (12.6.4.14, \"Rendition actions\")"
+      ],
+      [
+        "Encryption",
+        "Requires support for the specific set of encryption parameters that are specified by the encryption dictionary provided as the value of the Encrypt key in the requirement dictionary (see \"Table 273 — Entries common to all requirement dictionaries\" and \"Table 274 — Entries for specific types of requirements\").\n(PDF 2.0) For unencrypted wrapper documents for an encrypted payload document (see 7.6.7, \"Unencrypted wrapper document\") the Encryption requirement is not specified for the unencrypted wrapper document.\nNOTE 6 The intent of the wrapper is to enable PDF processors that are unable to decrypt the embedded encrypted payload document to present the content of the unencrypted wrapper document to assist users in understanding the cryptographic requirements of the encrypted payload document. Specifying the Encryption requirement on the wrapper could discourage PDF processors incapable of decrypting the embedded encrypted payload from presenting the unencrypted wrapper content."
+      ]
+    ]
+  }
+}

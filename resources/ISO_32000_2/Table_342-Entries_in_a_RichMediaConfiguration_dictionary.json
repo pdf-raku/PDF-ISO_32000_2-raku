@@ -1,0 +1,32 @@
+{
+  "table": {
+    "caption": "Table 342 — Entries in a RichMediaConfiguration dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Optional; PDF 2.0) The type of PDF object that this dictionary describes. If present, it is RichMediaConfiguration."
+      ],
+      [
+        "Subtype",
+        "name",
+        "(Optional; PDF 2.0) A name specifying the primary content type for the configuration. Valid values are 3D, Sound, and Video.\nDefault value: If no value is specified, the run time shall determines the scene type by referring to the type of asset file specified by the first element in the Instances array."
+      ],
+      [
+        "Name",
+        "text string",
+        "(Optional; PDF 2.0) A unique name for the configuration."
+      ],
+      [
+        "Instances",
+        "array",
+        "(Optional; PDF 2.0) An array of indirect object references to RichMediaInstance dictionaries. (See \"Table 343 — Entries in a RichMediaInstance dictionary\".)"
+      ]
+    ]
+  }
+}

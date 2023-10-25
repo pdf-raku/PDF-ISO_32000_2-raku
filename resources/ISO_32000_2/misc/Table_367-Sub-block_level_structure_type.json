@@ -1,0 +1,17 @@
+{
+  "table": {
+    "caption": "Table 367 — Sub-block level structure type",
+    "head": [
+      "Structure Type",
+      "Category",
+      "Description"
+    ],
+    "rows": [
+      [
+        "Sub",
+        "Inline",
+        "(PDF 2.0) (Sub-division of a block level element) Encloses content typically perceived as a sub-division inside a block level structure element.\nA Lbl structure element may be used inside a Sub structure element to enclose a line number, verse number or similar, if present.\nIf a Sub structure element is used, all other content inside the same block level element that is the parent of the Sub structure element, is also enclosed in Sub structure elements.\nExamples:"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 383 — PrintField attributes",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Role",
+        "name",
+        "(Optional; not inheritable; PDF 1.7) The type of form field represented. The value of Role is one of the following:\nrb Radio button\ncb Check box\npb Push button\ntv Text-value field\nlb Listbox field\nThe tv role is used for non-interactive fields with textual values. The text that is the value of the field is the content of the Form structure element (see \"Table 368 — General inline level structure types\").\nNOTE 1 Examples include text edit fields, numeric fields, password fields, digital signature fields and combo box fields.\nSemantic groupings of non-interactive form fields and associated content (for example, a set of radio button fields associated with a label) is enclosed within a Part structure element.\nDefault value: None specified."
+      ],
+      [
+        "Checked, checked",
+        "name",
+        "(Optional; not inheritable; PDF 1.7; lower case form is deprecated in PDF 2.0) The state of a radio button or check box field. The value is one of: on, off, or neutral.\nNOTE 2 In earlier versions of PDF the case (capitalization) used for this key did not conform to the same conventions used elsewhere in this standard.\nDefault value: off."
+      ],
+      [
+        "Desc",
+        "text string",
+        "(Optional; not inheritable; PDF 1.7) The alternate name of the field.\nNOTE 3 Similar to the value supplied in the TU entry of the field dictionary for interactive fields (see \"Table 226 — Entries common to all field dictionaries\")."
+      ]
+    ]
+  }
+}

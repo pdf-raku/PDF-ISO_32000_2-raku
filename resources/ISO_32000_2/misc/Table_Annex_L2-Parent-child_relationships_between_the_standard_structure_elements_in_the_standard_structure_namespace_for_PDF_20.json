@@ -1,0 +1,310 @@
+{
+  "table": {
+    "caption": "Table Annex L.2 — Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0",
+    "head": [
+      "Structure Type",
+      "Children",
+      "Parents",
+      "Occ.",
+      "Structure Type",
+      "Occ.",
+      "Structure Type"
+    ],
+    "rows": [
+      [
+        "StructTreeRoot",
+        "1",
+        "Document",
+        "",
+        ""
+      ],
+      [
+        "Document",
+        "0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..1 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Document DocumentFragment Part Div Sect Aside NonStruct P Hn H Title Link Annot Form FENote L Table Figure Formula Artifact",
+        "1 0..n 0..n ‡ ‡ 0..n ‡ 0..n",
+        "StructTreeRoot Document DocumentFragment Part Div Aside NonStruct Artifact"
+      ],
+      [
+        "DocumentFragment",
+        "0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..1 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Document DocumentFragment Part Div Sect Aside NonStruct P Hn H Title Link Annot Form FENote L Table Figure Formula Artifact",
+        "0..n 0..n ‡ ‡ 0..n 0..n ‡ ∅* ∅* ∅* ∅* 0..n",
+        "Document DocumentFragment Part Div Sect Aside NonStruct Link Annot FENote Caption Artifact"
+      ],
+      [
+        "Part",
+        "‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡",
+        "Document DocumentFragment Part Div Sect Aside NonStruct P Hn H Title Sub Lbl Link Annot Form FENote L Table Caption Figure Formula Artifact",
+        "0..n 0..n ‡ ‡ 0..n 0..n ‡ 0..n ∅* ∅* ∅* 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Document DocumentFragment Part Div Sect Aside NonStruct Title Link Annot Form FENote LBody Caption Figure Formula Artifact"
+      ],
+      [
+        "Div",
+        "‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡",
+        "Document DocumentFragment Part Div Sect Aside NonStruct P Hn H Title Sub Lbl Em Strong Span Link Annot Form Ruby RB RT RP Warichu WT WP FENote L LI LBody Table TR TH TD THead TBody TFoot Caption Figure Formula Artifact",
+        "0..n 0..n ‡ ‡ 0..n 0..n ‡ 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Document DocumentFragment Part Div Sect Aside NonStruct Title Link Annot Form FENote LI LBody TH TD Caption Figure Formula Artifact"
+      ],
+      [
+        "Sect",
+        "0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..1 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "DocumentFragment Part Div Sect Aside NonStruct P Hn H Title Lbl Link Annot Form FENote L Table Caption Figure Formula Artifact",
+        "0..n 0..n ‡ ‡ 0..n 0..n ‡ 0..1 0..1 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Document DocumentFragment Part Div Sect Aside NonStruct Hn H Link Annot FENote LBody TH TD Caption Figure Artifact"
+      ],
+      [
+        "Aside",
+        "0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..1 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..1 0..n 0..n 0..n 0..n",
+        "Document DocumentFragment Part Div Sect NonStruct P Hn H Lbl Link Annot Form FENote L Table Caption Figure Formula Artifact content item",
+        "0..n 0..n ‡ ‡ 0..n ‡ 0..n ∅* ∅* 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Document DocumentFragment Part Div Sect NonStruct Title Link Annot FENote LBody Caption Figure Formula Artifact"
+      ],
+      [
+        "NonStruct",
+        "‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡ ‡",
+        "Document DocumentFragment Part Div Sect Aside NonStruct P Hn H Title Sub Lbl Em Strong Span Link Annot Form Ruby RB RT RP Warichu WT WP FENote L LI LBody Table TR TH TD THead TBody TFoot Caption Figure Formula Artifact content item",
+        "0..n 0..n ‡ ‡ 0..n 0..n ‡ 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Document DocumentFragment Part Div Sect Aside NonStruct Title Sub P Hn H Lbl Em Strong Span Link Annot Form Ruby RB RT RP Warichu WT WP FENote L LI LBody Table TR TH TD THead TBody TFoot Caption Figure Formula Artifact"
+      ],
+      [
+        "Title",
+        "0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..1 0..n 0..n 0..n 0..n",
+        "Part Div Aside NonStruct P Lbl Em Strong Span Link Annot Form Ruby Warichu FENote L Table Caption Figure Formula Artifact content item",
+        "0..n 0..n ‡ ‡ 0..n ‡ ∅* ∅* 0..n",
+        "Document DocumentFragment Part Div Sect NonStruct Link Annot Artifact"
+      ],
+      [
+        "Sub",
+        "0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "NonStruct Lbl Em Strong Span Link Annot Form Ruby Warichu FENote L Figure Formula Artifact content item",
+        "‡ ‡ ‡ 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n ∅* 0..n 0..n",
+        "Part Div NonStruct P Hn H Lbl Em Strong Span Link Annot RB RT RP WT WP FENote LBody Caption Figure Formula Artifact"
+      ],
+      [
+        "P",
+        "0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "NonStruct Sub Lbl Em Strong Span Link Annot Form Ruby Warichu FENote L Figure Formula Artifact content item",
+        "0..n 0..n ‡ ‡ 0..n 0..n ‡ 0..n ∅* ∅* 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Document DocumentFragment Part Div Sect Aside NonStruct Title Link Annot FENote LBody TH TD Caption Figure Formula Artifact"
+      ],
+      [
+        "Hn",
+        "0..1 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Sect NonStruct Sub Lbl Em Strong Span Link Annot Form Ruby Warichu FENote Figure Formula Artifact content item",
+        "0..n 0..n ‡ ‡ 0..n 0..n ‡ ∅* ∅* 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Document DocumentFragment Part Div Sect Aside NonStruct Link Annot LBody TH TD Caption Figure Formula Artifact"
+      ],
+      [
+        "H",
+        "0..1 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Sect NonStruct Sub Lbl Em Strong Span Link Annot Form Ruby Warichu FENote Figure Formula Artifact content item",
+        "0..1 0..1 ‡ ‡ 0..1 0..1 ‡ ∅* ∅* 0..1 0..1 0..1 0..1 0..1 0..1 0..1",
+        "Document DocumentFragment Part Div Sect Aside NonStruct Link Annot LBody TH TD Caption Figure Formula Artifact"
+      ],
+      [
+        "Lbl",
+        "0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "NonStruct Sub Em Strong Span Link Annot Form Ruby Warichu FENote Figure Formula Artifact content item",
+        "‡ ‡ 0..n 0..n ‡ 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Part Div Sect Aside NonStruct Title Sub P Hn H Em Strong Span Link Annot Form FENote LI TH TD Caption Figure Formula Artifact"
+      ],
+      [
+        "Em",
+        "0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "NonStruct Sub Lbl Em Strong Span Link Annot Form Ruby Warichu FENote Figure Formula Artifact content item",
+        "‡ ‡ 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Div NonStruct Title Sub P Hn H Lbl Em Strong Span Link Annot RB RT RP WT WP FENote LBody TH TD Caption Figure Formula Artifact"
+      ],
+      [
+        "Strong",
+        "0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "NonStruct Sub Lbl Em Strong Span Link Annot Form Ruby Warichu FENote Figure Formula Artifact content item",
+        "‡ ‡ 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Div NonStruct Title Sub P Hn H Lbl Em Strong Span Link Annot RB RT RP WT WP FENote LBody TH TD Caption Figure Formula Artifact"
+      ],
+      [
+        "Span",
+        "0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "NonStruct Sub Lbl Em Strong Span Link Annot Form Ruby Warichu FENote Figure Formula Artifact content item",
+        "‡ ‡ 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Div NonStruct Title Sub P Hn H Lbl Em Strong Span Link Annot RB RT RP WT WP FENote LBody TH TD Caption Figure Formula Artifact"
+      ],
+      [
+        "Link",
+        "∅* ∅* 0..n 0..n ∅* 0..n ∅* ∅* ∅* ∅* 0..n 0..n 0..n 0..n 0..n 0..n ∅* 0..n 0..n 0..n ∅* ∅* ∅* 0..n 0..n 0..n 0..n",
+        "DocumentFragment Part Div Sect Aside NonStruct P Hn H Title Sub Lbl Em Strong Span Annot Form Ruby Warichu FENote L Table Caption Figure Formula Artifact content item",
+        "0..n 0..n ‡ ‡ 0..n 0..n ‡ 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Document DocumentFragment Part Div Sect Aside NonStruct Title Sub P Hn H Lbl Em Strong Span Annot RB RT RP WT WP FENote LBody TH TD Caption Figure Formula Artifact"
+      ],
+      [
+        "Annot",
+        "∅* ∅* 0..n 0..n ∅* 0..n ∅* ∅* ∅* ∅* 0..n 0..n 0..n 0..n 0..n 0..n 0..n ∅* 0..n 0..n 0..n ∅* ∅* ∅* 0..n 0..n 0..n 0..n",
+        "DocumentFragment Part Div Sect Aside NonStruct P Hn H Title Sub Lbl Em Strong Span Link Annot Form Ruby Warichu FENote L Table Caption Figure Formula Artifact content item",
+        "0..n 0..n ‡ ‡ 0..n 0..n ‡ 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Document DocumentFragment Part Div Sect Aside NonStruct Title Sub P Hn H Lbl Em Strong Span Link Annot RB RT RP WT WP FENote LBody TH TD Caption Figure Formula Artifact"
+      ],
+      [
+        "Form",
+        "∅* 0..n 0..n 0..n 0..n ∅* ∅* 0..1 ∅* ∅* 0..n 0..n",
+        "Part Div NonStruct Lbl FENote L Table Caption Figure Formula Artifact content item",
+        "0..n 0..n ‡ ‡ 0..n 0..n ‡ 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n ∅* ∅* 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Document DocumentFragment Part Div Sect Aside NonStruct Title Sub P Hn H Lbl Em Strong Span Link Annot RB RT RP WT WP FENote LBody TH TD Caption Figure Formula Artifact"
+      ],
+      [
+        "Ruby",
+        "0..n [a] [a] [a] 0..n",
+        "NonStruct RB RT RP content item",
+        "‡ ‡ 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Div NonStruct Title Sub P Hn H Lbl Em Strong Span Link Annot FENote LBody TH TD Caption Figure Formula Artifact"
+      ],
+      [
+        "RB",
+        "0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n ‡",
+        "NonStruct Sub Em Strong Span Link Annot Form Artifact content item",
+        "‡ ‡ [a] 0..n",
+        "Div NonStruct Ruby Artifact"
+      ],
+      [
+        "RT",
+        "0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n ‡",
+        "NonStruct Sub Em Strong Span Link Annot Form Artifact content item",
+        "‡ ‡ [a] 0..n",
+        "Div NonStruct Ruby Artifact"
+      ],
+      [
+        "RP",
+        "0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n ‡",
+        "NonStruct Sub Em Strong Span Link Annot Form Artifact content item",
+        "‡ ‡ [a] 0..n",
+        "Div NonStruct Ruby Artifact"
+      ],
+      [
+        "Warichu",
+        "0..n [b] [b] 0..n",
+        "NonStruct WT WP content item",
+        "‡ ‡ 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Div NonStruct Title Sub P Hn H Lbl Em Strong Span Link Annot FENote LBody TH TD Caption Figure Formula Artifact"
+      ],
+      [
+        "WT",
+        "0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n ‡",
+        "NonStruct Sub Em Strong Span Link Annot Form Artifact content item",
+        "‡ ‡ [b] 0..n",
+        "Div NonStruct Warichu Artifact"
+      ],
+      [
+        "WP",
+        "0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n c 0..n ‡",
+        "NonStruct Sub Em Strong Span Link Annot Form Figure Artifact content item",
+        "‡ ‡ [b] 0..n",
+        "Div NonStruct Warichu Artifact"
+      ],
+      [
+        "FENote",
+        "∅* 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n ∅* 0..n 0..n 0..n 0..n",
+        "DocumentFragment Part Div Sect Aside NonStruct P Sub Lbl Em Strong Span Link Annot Form Ruby Warichu FENote L Table Caption Figure Formula Artifact content item",
+        "0..n 0..n ‡ ‡ 0..n 0..n ‡ 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Document DocumentFragment Part Div Sect Aside NonStruct Title Sub P Hn H Lbl Em Strong Span Link Annot Form FENote LBody TH TD Caption Figure Formula Artifact"
+      ],
+      [
+        "L",
+        "0..n 0..n 0..n 0..1 0..n",
+        "NonStruct L LI Caption Artifact",
+        "0..n 0..n ‡ ‡ 0..n 0..n ‡ 0..n 0..n 0..n ∅* ∅* ∅* 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Document DocumentFragment Part Div Sect Aside NonStruct Title Sub P Link Annot Form FENote L LBody TH TD Caption Figure Formula Artifact"
+      ],
+      [
+        "LI",
+        "0..n 0..n 0..n 0..n 0..n 0..n",
+        "Div NonStruct Lbl LBody Artifact content item",
+        "‡ ‡ 0..n 0..n",
+        "Div NonStruct L Artifact"
+      ],
+      [
+        "LBody",
+        "0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..1 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..1 0..n 0..n 0..n 0..n",
+        "Part Div Sect Aside NonStruct P Hn H Sub Em Strong Span Link Annot Form Ruby Warichu FENote L Table Caption Figure Formula Artifact content item",
+        "‡ ‡ 0..n 0..n",
+        "Div NonStruct LI Artifact"
+      ],
+      [
+        "Table",
+        "0..n 0..n 0..1 0..n 0..1 0..1 0..n",
+        "NonStruct TR THead TBody TFoot Caption Artifact",
+        "0..n 0..n ‡ ‡ 0..n 0..n ‡ 0..n ∅* ∅* ∅* 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Document DocumentFragment Part Div Sect Aside NonStruct Title Link Annot Form FENote LBody TH TD Caption Figure Formula Artifact"
+      ],
+      [
+        "TR",
+        "0..n 0..n 0..n 0..n",
+        "NonStruct TH TD Artifact",
+        "‡ ‡ 0..n 0..n 0..n 0..n 0..n",
+        "Div NonStruct Table THead TBody TFoot Artifact"
+      ],
+      [
+        "TH",
+        "0..n 0..n 0..n 0..n 0..n 0..1 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Div Sect NonStruct P Hn H Lbl Em Strong Span Link Annot Form Ruby Warichu FENote L Table Figure Formula Artifact content item",
+        "‡ ‡ 0..n 0..n",
+        "Div NonStruct TR Artifact"
+      ],
+      [
+        "TD",
+        "0..n 0..n 0..n 0..n 0..n 0..1 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Div Sect NonStruct P Hn H Lbl Em Strong Span Link Annot Form Ruby Warichu FENote L Table Figure Formula Artifact content item",
+        "‡ ‡ 0..n 0..n",
+        "Div NonStruct TR Artifact"
+      ],
+      [
+        "THead",
+        "0..n 0..n 0..n",
+        "NonStruct TR Artifact",
+        "‡ ‡ 0..1 0..n",
+        "Div NonStruct Table Artifact"
+      ],
+      [
+        "TBody",
+        "0..n 0..n 0..n",
+        "NonStruct TR Artifact",
+        "‡ ‡ 0..n 0..n",
+        "Div NonStruct Table Artifact"
+      ],
+      [
+        "TFoot",
+        "0..n 0..n 0..n",
+        "NonStruct TR Artifact",
+        "‡ ‡ 0..1 0..n",
+        "Div NonStruct Table Artifact"
+      ],
+      [
+        "Caption",
+        "∅* 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..1 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "DocumentFragment Part Div Sect Aside NonStruct P Hn H Sub Lbl Em Strong Span Link Annot Form Ruby Warichu FENote L Table Figure Formula Artifact content item",
+        "‡ ‡ 0..n 0..1 ‡ 0..1 ∅* ∅* 0..1 ∅* 0..1 0..1 0..1 0..1 0..1 0..1",
+        "Part Div Sect Aside NonStruct Title Link Annot Form FENote L LBody Table Figure Formula Artifact"
+      ],
+      [
+        "Figure",
+        "0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..1 ∅* 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..1 0..n 0..n 0..n 0..n",
+        "Part Div Sect Aside NonStruct P Hn H Sub Lbl Em Strong Span Link Annot Form Ruby Warichu FENote L Table Caption Figure Formula Artifact content item",
+        "0..n 0..n ‡ ‡ 0..n 0..n ‡ 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n ∅* c 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Document DocumentFragment Part Div Sect Aside NonStruct Title Sub P Hn H Lbl Em Strong Span Link Annot Form WP FENote LBody TH TD Caption Figure Formula Artifact"
+      ],
+      [
+        "Formula",
+        "0..n 0..n 0..n 0..n 0..n 0..n 0..1 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..1 0..n 0..n 0..n 0..n",
+        "Part Div Aside NonStruct P Hn H Sub Lbl Em Strong Span Link Annot Form Ruby Warichu FENote L Table Caption Figure Formula Artifact content item",
+        "0..n 0..n ‡ ‡ 0..n 0..n ‡ 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n ∅* 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Document DocumentFragment Part Div Sect Aside NonStruct Title Sub P Hn H Lbl Em Strong Span Link Annot Form FENote LBody TH TD Caption Figure Formula Artifact"
+      ],
+      [
+        "Artifact",
+        "0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..1 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..1 0..n 0..n 0..n 0..n",
+        "Document DocumentFragment Part Div Sect Aside NonStruct P Hn H Title Sub Lbl Em Strong Span Link Annot Form Ruby RB RT RP Warichu WT WP FENote L LI LBody Table TR TH TD THead TBody TFoot Caption Figure Formula Artifact content item",
+        "0..n 0..n ‡ ‡ 0..n 0..n ‡ 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n 0..n",
+        "Document DocumentFragment Part Div Sect Aside NonStruct Title Sub P Hn H Lbl Em Strong Span Link Annot Form RB RT RP WT WP FENote L LI LBody Table TR TH TD THead TBody TFoot Caption Figure Formula Artifact"
+      ]
+    ]
+  }
+}

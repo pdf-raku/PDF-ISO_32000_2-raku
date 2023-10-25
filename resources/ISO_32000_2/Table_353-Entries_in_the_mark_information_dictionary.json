@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 353 — Entries in the mark information dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Marked",
+        "boolean",
+        "(Optional) A flag indicating whether the document conforms to tagged PDF conventions (see 14.8, \"Tagged PDF\"). Default value: false.\nIf Suspects is true, the document may not completely conform to tagged PDF conventions."
+      ],
+      [
+        "UserProperties",
+        "boolean",
+        "(Optional; PDF 1.6) A flag indicating the presence of structure elements that contain user properties attributes (see 14.7.6.4, \"User properties\"). Default value: false."
+      ],
+      [
+        "Suspects",
+        "boolean",
+        "(Optional; PDF 1.6; deprecated in PDF 2.0) A flag indicating the presence of tag suspects. Default value: false."
+      ]
+    ]
+  }
+}

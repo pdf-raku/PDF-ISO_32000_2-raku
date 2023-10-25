@@ -1,0 +1,32 @@
+{
+  "table": {
+    "caption": "Table 248 — Entries in the ECMAScript dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Before",
+        "text string or text stream",
+        "(Optional) A text string or text stream containing an ECMAScript script that is executed just before the FDF file is imported."
+      ],
+      [
+        "After",
+        "text string or text stream",
+        "(Optional) A text string or text stream containing an ECMAScript script that is executed just after the FDF file is imported."
+      ],
+      [
+        "AfterPermsReady",
+        "text string or text stream",
+        "(Optional; PDF 1.6) A text string or text stream containing an ECMAScript script that is executed after the FDF file is imported and the usage rights in the PDF document have been determined (see 12.8.2.3, \"UR\")."
+      ],
+      [
+        "Doc",
+        "Array",
+        "(Optional) An array defining additional ECMAScript scripts that is added to those defined in the JavaScript entry of the document’s name dictionary (see 7.7.4, \"Name dictionary\"). The array contains an even number of elements, organised in pairs. The first element of each pair is a name and the second is a text string or text stream defining the script corresponding to that name. Each of the defined scripts is added to those already defined in the name dictionary and is then executed before the script defined in the Before entry is executed.\nNOTE As described in 12.6.4.17, \"ECMAScript actions\" these scripts are used to define ECMAScript functions for use by other scripts in the document."
+      ]
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 158 — Entries in a collection split dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Optional; PDF 2.0) The type of PDF object that this dictionary describes; if present, is CollectionSplit for a collection split dictionary."
+      ],
+      [
+        "Direction",
+        "name",
+        "(Optional; PDF 2.0) The orientation of the splitter bar. The following values are valid:\nH indicates that the window is split horizontally\nV indicates that the window is split vertically.\nN indicates that the window is not split. The entire window region is dedicated to the file navigation view."
+      ],
+      [
+        "Position",
+        "number",
+        "(Optional; PDF 2.0) The initial position of the splitter bar, specified as a percentage of the available window area. Values shall range from 0 to 100. The entry is ignored if Direction is set to N."
+      ]
+    ]
+  }
+}

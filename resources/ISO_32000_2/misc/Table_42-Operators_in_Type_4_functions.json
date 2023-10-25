@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 42 — Operators in Type 4 functions",
+    "head": [
+      "Operator Type",
+      "Operators"
+    ],
+    "rows": [
+      [
+        "Arithmetic operators",
+        ""
+      ],
+      [
+        "Relational, boolean, and bitwise operators",
+        ""
+      ],
+      [
+        "Conditional operators",
+        ""
+      ],
+      [
+        "Stack operators",
+        ""
+      ]
+    ]
+  }
+}

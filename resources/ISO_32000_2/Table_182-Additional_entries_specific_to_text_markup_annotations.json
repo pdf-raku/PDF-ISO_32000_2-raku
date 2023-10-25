@@ -1,0 +1,22 @@
+{
+  "table": {
+    "caption": "Table 182 — Additional entries specific to text markup annotations",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Subtype",
+        "name",
+        "(Required) The type of annotation that this dictionary describes; is Highlight, Underline, Squiggly, or StrikeOut for a highlight, underline, squiggly-underline, or strikeout annotation, respectively."
+      ],
+      [
+        "QuadPoints",
+        "array",
+        "(Required) An array of 8×\uD835\uDC5B numbers specifying the coordinates of n quadrilaterals in default user space. Each quadrilateral shall encompasses a word or group of contiguous words in the text underlying the annotation. The coordinates for each quadrilateral is given in the order: \uD835\uDC651 \uD835\uDC661 \uD835\uDC652 \uD835\uDC662 \uD835\uDC653 \uD835\uDC663 \uD835\uDC654 \uD835\uDC664\nspecifying the quadrilateral’s four vertices in counterclockwise order (see \"Figure 84 — QuadPoints specification\"). The text is oriented with respect to the edge connecting points (x1, y1) and (x2, y2)."
+      ]
+    ]
+  }
+}

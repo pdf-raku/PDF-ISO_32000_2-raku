@@ -1,0 +1,22 @@
+{
+  "table": {
+    "caption": "Table 336 — Entries in a RichMediaDeactivation dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Optional; PDF 2.0) The type of PDF object that this dictionary describes. If present, is RichMediaDeactivation."
+      ],
+      [
+        "Condition",
+        "name",
+        "(Optional; PDF 2.0) A name specifying the circumstances under which the annotation is deactivated. The following values are valid:\nXD the annotation is explicitly deactivated by a user action or script.\nPC the annotation is deactivated as soon as the page that contains the annotation loses focus as the current page.\nPI the annotation is deactivated as soon as the entire page that contains the annotation is no longer visible.\nDefault value: XD."
+      ]
+    ]
+  }
+}

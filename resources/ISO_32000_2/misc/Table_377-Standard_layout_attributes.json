@@ -1,0 +1,187 @@
+{
+  "table": {
+    "caption": "Table 377 — Standard layout attributes",
+    "head": [
+      "Structure Elements",
+      "Attributes",
+      "Inheritable"
+    ],
+    "rows": [
+      [
+        "Any structure element",
+        "Placement",
+        "No"
+      ],
+      [
+        "",
+        "WritingMode",
+        "Yes"
+      ],
+      [
+        "",
+        "BackgroundColor",
+        "No"
+      ],
+      [
+        "",
+        "BorderColor",
+        "Yes"
+      ],
+      [
+        "",
+        "BorderStyle",
+        "No"
+      ],
+      [
+        "",
+        "BorderThickness",
+        "Yes"
+      ],
+      [
+        "",
+        "Color",
+        "Yes"
+      ],
+      [
+        "",
+        "Padding",
+        "No"
+      ],
+      [
+        "Any BLSE; ILSEs with Placement other than Inline",
+        "SpaceBefore",
+        "No"
+      ],
+      [
+        "",
+        "SpaceAfter",
+        "No"
+      ],
+      [
+        "",
+        "StartIndent",
+        "Yes"
+      ],
+      [
+        "",
+        "EndIndent",
+        "Yes"
+      ],
+      [
+        "BLSEs containing text",
+        "TextIndent",
+        "Yes"
+      ],
+      [
+        "",
+        "TextAlign",
+        "Yes"
+      ],
+      [
+        "Figure, Form, Formula and Table elements",
+        "BBox",
+        "No"
+      ],
+      [
+        "",
+        "Width",
+        "No"
+      ],
+      [
+        "",
+        "Height",
+        "No"
+      ],
+      [
+        "TH (Table header); TD (Table data)",
+        "Width",
+        "No"
+      ],
+      [
+        "",
+        "Height",
+        "No"
+      ],
+      [
+        "",
+        "BlockAlign",
+        "Yes"
+      ],
+      [
+        "",
+        "InlineAlign",
+        "Yes"
+      ],
+      [
+        "",
+        "TBorderStyle",
+        "Yes"
+      ],
+      [
+        "",
+        "TPadding",
+        "Yes"
+      ],
+      [
+        "Any ILSE; BLSEs containing ILSEs or containing direct or nested content items",
+        "LineHeight",
+        "Yes"
+      ],
+      [
+        "",
+        "BaselineShift",
+        "No"
+      ],
+      [
+        "",
+        "TextDecorationType",
+        "Yes, only for directly nested ILSEs"
+      ],
+      [
+        "",
+        "TextPosition",
+        "Yes"
+      ],
+      [
+        "",
+        "TextDecorationColor",
+        "Yes"
+      ],
+      [
+        "",
+        "TextDecorationThickness",
+        "Yes"
+      ],
+      [
+        "Grouping elements",
+        "ColumnCount",
+        "No"
+      ],
+      [
+        "",
+        "ColumnWidths",
+        "No"
+      ],
+      [
+        "",
+        "ColumnGap",
+        "No"
+      ],
+      [
+        "Vertical text",
+        "GlyphOrientationVertical",
+        "Yes"
+      ],
+      [
+        "Ruby text",
+        "RubyAlign",
+        "Yes"
+      ],
+      [
+        "",
+        "RubyPosition",
+        "Yes"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 220 — Additional entries specific to a go-to-3D-view action",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "S",
+        "name",
+        "(Required) The type of action that this dictionary describes; is GoTo3DView for a transition action."
+      ],
+      [
+        "TA",
+        "dictionary",
+        "(Required) The target annotation for which to set the view."
+      ],
+      [
+        "V",
+        "(various)",
+        "(Required) The view to use. It may be one of the following types:"
+      ]
+    ]
+  }
+}

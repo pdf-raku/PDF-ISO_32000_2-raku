@@ -1,0 +1,37 @@
+{
+  "table": {
+    "caption": "Table 340 — Entries in a RichMediaPosition dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Optional; PDF 2.0) The type of PDF object that this dictionary describes. If present, it is RichMediaPosition."
+      ],
+      [
+        "HAlign",
+        "name",
+        "(Optional; PDF 2.0) Describes the horizontal alignment. Valid values are Near, Center, and Far.\nDefault value: Far"
+      ],
+      [
+        "VAlign",
+        "name",
+        "(Optional; PDF 2.0) Describes the vertical alignment. Valid values are Near, Center, and Far.\nDefault value: Near"
+      ],
+      [
+        "HOffset",
+        "number",
+        "(Optional; PDF 2.0) The offset from the alignment point specified by the HAlign key. A positive value for HOffset, when HAlign is either Near or Center, shall offset the position towards the Far direction. A positive value for HOffset, when HAlign is Far, shall offset the position towards the Near direction.\nDefault value: 18"
+      ],
+      [
+        "VOffset",
+        "number",
+        "(Optional; PDF 2.0) The offset from the alignment point specified by the VAlign key. A positive value for VOffset, when VAlign is either Near or Center, shall offset the position towards the Far direction. A positive value for VOffset, when VAlign is Far, shall offset the position towards the Near direction.\nDefault value: 18"
+      ]
+    ]
+  }
+}

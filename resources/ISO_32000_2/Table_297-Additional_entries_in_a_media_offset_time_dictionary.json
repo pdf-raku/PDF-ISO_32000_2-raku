@@ -1,0 +1,17 @@
+{
+  "table": {
+    "caption": "Table 297 — Additional entries in a media offset time dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "T",
+        "dictionary",
+        "(Required) A timespan dictionary (see \"Table 300 — Entries in a timespan dictionary\") that specifies a temporal offset into a media object. Negative timespans are prohibited in this context. The media offset time dictionary is non-viable if its timespan dictionary is non-viable."
+      ]
+    ]
+  }
+}

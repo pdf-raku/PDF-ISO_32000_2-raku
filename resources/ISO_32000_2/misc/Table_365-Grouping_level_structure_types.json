@@ -1,0 +1,37 @@
+{
+  "table": {
+    "caption": "Table 365 — Grouping level structure types",
+    "head": [
+      "Structure Type",
+      "Category",
+      "Description"
+    ],
+    "rows": [
+      [
+        "Part",
+        "Grouping",
+        "Encloses a grouping of structure elements without consideration for their hierarchy.\nNOTE 1 Part is the semantic equivalent of Div.\nA structure element with the type of Part shall inherit the containment requirements and limitations of its parent element. Where the parent element is itself a structure element of type Part, then the inheritance shall recurse to the first parent element whose type is not Part.\nEXAMPLE 1 The following are just a few of the possible types of content that could be marked as Part:"
+      ],
+      [
+        "Sect",
+        "Grouping",
+        "Encloses a grouping of structure elements with consideration for their hierarchy.\nEXAMPLE 2 The following are just a few of the possible types of content that could be marked as Sect:"
+      ],
+      [
+        "Div",
+        "Grouping",
+        "Encloses content structured in fashion that is orthogonal to the semantic structure. It can be used as a role mapping target for custom tags for which no suitable standard structure element is available, or where attributes are applied in a non-semantic fashion.\nNOTE 2 Nesting Div structure elements allows content to be subdivided.\nA structure element with the type of Div shall inherit the containment requirements and limitations of its parent element. Where the parent element is itself a structure element of type Div, then the inheritance shall recurse to the first parent element whose type is not Div.\nNOTE 3 Div does not change the semantic level of the structure hierarchy.\nEXAMPLE 3 The following is just one of the possible types of content that could be marked as Div:"
+      ],
+      [
+        "Aside",
+        "Grouping",
+        "(PDF 2.0) Encloses content that is distinct from other content within its parent structure element.\nEXAMPLE 4 The following are just a few of the possible types of content that could be marked as Aside:"
+      ],
+      [
+        "NonStruct",
+        "Grouping",
+        "(Non-structural element) A grouping element having no inherent structural significance; it serves solely for grouping purposes. This type of element differs from a division (structure type Div) in that it is not interpreted or exported to other document formats. Its descendants is processed normally.\nA structure element with the type of NonStruct shall inherit the containment requirements and limitations of its parent element. Where the parent element is itself a structure element of type NonStruct, then the inheritance shall recurse to the first parent element whose type is not NonStruct."
+      ]
+    ]
+  }
+}

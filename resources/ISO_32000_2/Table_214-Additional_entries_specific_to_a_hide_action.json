@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 214 — Additional entries specific to a hide action",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "S",
+        "name",
+        "(Required) The type of action that this dictionary describes; is Hide for a hide action."
+      ],
+      [
+        "T",
+        "dictionary, text string, or array",
+        "(Required) The annotation or annotations to be hidden or shown, is specified in any of the following forms:"
+      ],
+      [
+        "H",
+        "boolean",
+        "(Optional) A flag indicating whether to hide the annotation (true) or show it (false). Default value: true."
+      ]
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 202 — Additional entries specific to a go-to action",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "S",
+        "name",
+        "(Required) The type of action that this dictionary describes; is GoTo for a go-to action."
+      ],
+      [
+        "D",
+        "name, byte string, or array",
+        "(Required) The destination to jump to (see 12.3.2, \"Destinations\")."
+      ],
+      [
+        "SD",
+        "array",
+        "(Optional; PDF 2.0) The structure destination to jump to (see 12.3.2.3, \"Structure destinations\"). If present, the structure destination takes precedence over destination in the D entry."
+      ]
+    ]
+  }
+}

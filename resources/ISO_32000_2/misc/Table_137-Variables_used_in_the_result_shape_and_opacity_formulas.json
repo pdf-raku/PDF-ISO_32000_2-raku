@@ -1,0 +1,35 @@
+{
+  "table": {
+    "caption": "Table 137 — Variables used in the result shape and opacity formulas",
+    "head": [
+      "Variable",
+      "Meaning"
+    ],
+    "rows": [
+      [
+        "\uD835\uDC53\uD835\uDC93",
+        "Result shape"
+      ],
+      [
+        "\uD835\uDC53\uD835\uDC4F",
+        "Backdrop shape"
+      ],
+      [
+        "\uD835\uDC53\uD835\uDC60",
+        "Source shape"
+      ],
+      [
+        "\uD835\uDC5E\uD835\uDC5F",
+        "Result opacity"
+      ],
+      [
+        "\uD835\uDC5E\uD835\uDC4F",
+        "Backdrop opacity"
+      ],
+      [
+        "\uD835\uDC5E\uD835\uDC60",
+        "Source opacity"
+      ]
+    ]
+  }
+}

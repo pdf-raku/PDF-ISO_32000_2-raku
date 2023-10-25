@@ -1,0 +1,17 @@
+{
+  "table": {
+    "caption": "Table 374 — Standard structure type Formula",
+    "head": [
+      "Structure Type",
+      "Category",
+      "Description"
+    ],
+    "rows": [
+      [
+        "Formula",
+        "Grouping, Block or Inline",
+        "Encloses a formula.\nThe BBox attribute (\"see 14.8.5, \"Standard structure attributes\") is present for a formula appearing in its entirety on a single page to indicate the area of the formula on the page.\nEXAMPLE Some examples of content that would be marked as Formula include:"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 343 — Entries in a RichMediaInstance dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Optional; PDF 2.0) The type of PDF object that this dictionary describes. If present, it is RichMediaInstance."
+      ],
+      [
+        "Subtype",
+        "name",
+        "(Required; PDF 2.0) A name specifying the content type for the instance.\nValid values are 3D, Sound, and Video. The subtype matches the asset file type of the instance."
+      ],
+      [
+        "Asset",
+        "dictionary",
+        "(Required; PDF 2.0) A dictionary that is an indirect object reference to a file specification dictionary that is also referenced in the Assets name tree specified in the RichMediaContent dictionary of the annotation."
+      ]
+    ]
+  }
+}

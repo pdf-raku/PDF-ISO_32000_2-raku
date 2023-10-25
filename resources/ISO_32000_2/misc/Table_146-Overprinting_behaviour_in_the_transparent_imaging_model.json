@@ -1,0 +1,89 @@
+{
+  "table": {
+    "caption": "Table 146 — Overprinting behaviour in the transparent imaging model",
+    "head": [
+      "Source colour space",
+      "Affected colour component of group space",
+      "Value of blend function \uD835\uDC69(\uD835\uDC6A\uD835\uDC83,\uD835\uDC6A\uD835\uDC94) expressed as tint"
+    ],
+    "rows": [
+      [
+        "",
+        "",
+        "OP false",
+        "OP true,\nOPM 0",
+        "OP true,\nOPM 1"
+      ],
+      [
+        "DeviceCMYK, specified directly, not in a sampled image",
+        "C, M, Y, or K",
+        "\uD835\uDC36\uD835\uDC60",
+        "\uD835\uDC36\uD835\uDC60",
+        "\uD835\uDC36\uD835\uDC60 \uD835\uDC56\uD835\uDC53 \uD835\uDC36\uD835\uDC60≠0.0 \uD835\uDC36\uD835\uDC4F \uD835\uDC56\uD835\uDC53 \uD835\uDC36\uD835\uDC60=0.0"
+      ],
+      [
+        "",
+        "Process colour component other than CMYK",
+        "\uD835\uDC36\uD835\uDC60",
+        "\uD835\uDC36\uD835\uDC60",
+        "\uD835\uDC36\uD835\uDC60"
+      ],
+      [
+        "",
+        "Spot colourant",
+        "\uD835\uDC36\uD835\uDC60(=0.0)",
+        "\uD835\uDC36\uD835\uDC4F",
+        "\uD835\uDC36\uD835\uDC4F"
+      ],
+      [
+        "Any process colour space (including other cases of DeviceCMYK)",
+        "Process colour component",
+        "\uD835\uDC36\uD835\uDC60",
+        "\uD835\uDC36\uD835\uDC60",
+        "\uD835\uDC36\uD835\uDC60"
+      ],
+      [
+        "",
+        "Spot colourant",
+        "\uD835\uDC36\uD835\uDC60(=0.0)",
+        "\uD835\uDC36\uD835\uDC4F",
+        "\uD835\uDC36\uD835\uDC4F"
+      ],
+      [
+        "",
+        "",
+        "OP false",
+        "OP true,\nOPM 0",
+        "OP true,\nOPM 1"
+      ],
+      [
+        "Separation or DeviceN",
+        "Process colour component",
+        "\uD835\uDC36\uD835\uDC60(=0.0)",
+        "\uD835\uDC36\uD835\uDC4F",
+        "\uD835\uDC36\uD835\uDC4F"
+      ],
+      [
+        "",
+        "Spot colourant named in source space",
+        "\uD835\uDC36\uD835\uDC60",
+        "\uD835\uDC36\uD835\uDC60",
+        "\uD835\uDC36\uD835\uDC60"
+      ],
+      [
+        "",
+        "Spot colourant not named in source space",
+        "\uD835\uDC36\uD835\uDC60(=0.0)",
+        "\uD835\uDC36\uD835\uDC4F",
+        "\uD835\uDC36\uD835\uDC4F"
+      ],
+      [
+        "A group (not an elementary object)",
+        "All colour components",
+        "\uD835\uDC36\uD835\uDC60",
+        "\uD835\uDC36\uD835\uDC60",
+        "\uD835\uDC36\uD835\uDC60"
+      ]
+    ]
+  }
+}

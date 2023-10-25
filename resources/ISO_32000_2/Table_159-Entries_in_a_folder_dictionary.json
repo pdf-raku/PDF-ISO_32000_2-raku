@@ -1,0 +1,72 @@
+{
+  "table": {
+    "caption": "Table 159 — Entries in a folder dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Optional; PDF 2.0) The type of PDF object that this dictionary describes; if present, is Folder for a folder dictionary."
+      ],
+      [
+        "ID",
+        "integer",
+        "(Required; PDF 2.0) A non-negative integer value representing the unique folder identification number. Two folders, in the same PDF document, does not share the same ID value.\nThe folder ID value appears as part of the name tree key of any file associated with this folder. A detailed description of the association between folder and files can be found after this table."
+      ],
+      [
+        "Name",
+        "text string",
+        "(Required; PDF 2.0) A file name representing the name of the folder. Two sibling folders does not share the same name following case normalization.\nNOTE Descriptions of file name and case normalization follow this table."
+      ],
+      [
+        "Parent",
+        "dictionary",
+        "(Required for child folders; PDF 2.0) An indirect reference to the parent folder of this folder.\nThis entry is absent for a root folder."
+      ],
+      [
+        "Child",
+        "dictionary",
+        "(Required if the folder has any descendents; PDF 2.0) An indirect reference to the first child folder of this folder."
+      ],
+      [
+        "Next",
+        "dictionary",
+        "(Required for all but the last item at each level; PDF 2.0) An indirect reference to the next sibling folder at this level.\nSiblings is ordered according to the collection Sort key (\"Table 153 — Entries in a collection dictionary\") or by folder name if no collection Sort key is present."
+      ],
+      [
+        "CI\n(uppercase ci)",
+        "dictionary",
+        "(Optional; PDF 2.0) The collection item dictionary. Beginning with PDF 1.7, a collection item dictionary contains the data described by the collection schema dictionary for a particular file in a collection (see 12.3.5, \"Collections\"). \"Table 46 — Entries in a collection item dictionary\" describes the entries in a collection item dictionary."
+      ],
+      [
+        "Desc",
+        "text string",
+        "(Optional; PDF 2.0) A text description associated with this folder."
+      ],
+      [
+        "CreationDate",
+        "date",
+        "(Optional; PDF 2.0) The date the folder was first created."
+      ],
+      [
+        "ModDate",
+        "date",
+        "(Optional; PDF 2.0) The date of the most recent change to immediate child files or folders of this folder."
+      ],
+      [
+        "Thumb",
+        "stream",
+        "(Optional; PDF 2.0) A stream object defining the thumbnail image for the folder See 12.3.4, \"Thumbnail images\"."
+      ],
+      [
+        "Free",
+        "array",
+        "(Optional; only used by root folder; PDF 2.0) An array containing ID values that are not currently in use by the folder structure. The array shall contains zero or more pairs of numbers, a low value followed by a high value. Each pair represents an endpoint-inclusive range of values that are available for use when a new folder is added. Each low value is less than or equal to its corresponding high value."
+      ]
+    ]
+  }
+}

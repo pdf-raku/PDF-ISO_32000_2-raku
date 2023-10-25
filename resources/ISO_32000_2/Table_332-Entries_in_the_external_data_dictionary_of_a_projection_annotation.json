@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 332 — Entries in the external data dictionary of a projection annotation",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Required; PDF 2.0) The type of PDF object that this dictionary describes; if present, is ExData for an external data dictionary."
+      ],
+      [
+        "Subtype",
+        "name",
+        "(Required; PDF 2.0) The type of external data that this dictionary describes; is 3DM for an association to a 3D measurement."
+      ],
+      [
+        "M3DREF",
+        "dictionary",
+        "(Required; PDF 2.0) An indirect reference to a 3D measurement dictionary for which this projection annotation is a comment. See 12.5.6.24, \"Projection annotations\"."
+      ]
+    ]
+  }
+}

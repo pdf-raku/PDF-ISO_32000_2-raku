@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 334 — Entries in a RichMediaSettings dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Optional; PDF 2.0) The type of PDF object that this dictionary describes. If present, is RichMediaSettings."
+      ],
+      [
+        "Activation",
+        "dictionary",
+        "(Optional; PDF 2.0) A RichMediaActivation dictionary (see \"Table 335 — Entries in a RichMediaActivation dictionary\") that specifies the style of presentation, default script behavior, default view information, and animation style when the annotation is activated."
+      ],
+      [
+        "Deactivation",
+        "dictionary",
+        "(Optional; PDF 2.0) A RichMediaDeactivation dictionary (see \"Table 336 — Entries in a RichMediaDeactivation dictionary\") that specifies the condition and type of unloading (restart or pause) that occurs during deactivation."
+      ]
+    ]
+  }
+}

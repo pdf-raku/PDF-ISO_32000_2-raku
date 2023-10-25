@@ -1,0 +1,37 @@
+{
+  "table": {
+    "caption": "Table 366 — Block level structure types",
+    "head": [
+      "Structure Type",
+      "Category",
+      "Description"
+    ],
+    "rows": [
+      [
+        "P",
+        "Block",
+        "(Paragraph) A low-level division of content. Although in many cases it will be used for paragraphs it may enclose any low-level division of content.\nEXAMPLE The following is just one of the possible types of content that could be marked as P:"
+      ],
+      [
+        "Hn",
+        "Block",
+        "(With n being a sequence of digits representing an unsigned integer greater than or equal to 1) Encloses a low-level division of content usually referred to as a heading.\nNOTE 1 Low-level content would typically be perceived as a sub-section of a document, whether a section heading, chapter or any other identifiable subdivision of content within a logical document. See the Title element regarding high-level division of content.\nAny such heading structure element always consist of the uppercase letter \"H\" and one or more digits, representing an unsigned integer greater than or equal to 1, without leading zeroes or any other prefix or postfix.\nThe heading level is indicated through the chosen structure element type, for example H1 indicates a heading at the topmost level within a document, H2 a heading at the second level, and so forth.\nNOTE 2 This implies that H7 can be used to indicate a heading on the seventh level, whereas h7, H07, H-7 or H_7 cannot be used as heading structure elements.\nThe heading level indicated by a heading should reflect the heading level of the tagged content.\nNOTE 3 The Lbl structure element can be used to enclose section enumeration content or its functional equivalent present inside the heading.\nEXAMPLE A section heading in a text book or newspaper article is one example where a heading level would be indicated."
+      ],
+      [
+        "H",
+        "Block",
+        "Encloses a low-level division of content usually referred to as a heading. The heading level is not indicated through this structure element, but instead is derived from the nesting of the logical structure within a given Document or DocumentFragment structure element. The H heading structure elements always be the first structure element within its parent structure element. The H heading structure element always be the only heading structure element within its parent structure element.\nNOTE 1 This implies that within a given logical document it is not acceptable that an H heading structure element is used if a H1, H2, H3 etc. heading structure element is also used inside the same DocumentFragment structure element.\nNOTE 2 The Lbl structure element can be used to enclose a section number or similar present inside the heading.\nEXAMPLE 1 As the use of the H heading structure element requires strict document structuring it is typically used only for machine generated documents, documents created from a well structured content data set or documents whose creation is fully controlled by a program such that its structure is strictly guaranteed.\nEXAMPLE 2 Scientific publications and technical specifications often follow very strict structuring rules and thus are suitable candidates for use of the H heading structure element."
+      ],
+      [
+        "Title",
+        "Grouping or Block",
+        "(PDF 2.0) Encloses content that is usually referred to as the title of a document or high-level division of content.\nNOTE 3 High-level content would typically be perceived as the title of an article, section, chapter or any other identifiable top-level subdivision of content within a logical document. See the Hn and H elements regarding low-level division of content.\nIt occurs only once inside the parent grouping structure element, and it occurs at or near the beginning of the content inside that grouping structure element.\nEXAMPLE 3 The title of a book, brochure or leaflet are some types of content that can be marked with the Title structure element."
+      ],
+      [
+        "FENote",
+        "Grouping, Block or Inline",
+        "(PDF 2.0) Used to markup footnotes and endnotes. Footnotes and endnotes are content that is not normally read as part of the enclosing content from which it is referenced, but rather consulted at the reading person’s discretion. In order for text to be considered a footnote or endnote, there is a reference from the enclosing content to the footnote or endnote. Such reference may be achieved by means of a Link structure element through a structure destination in its link annotation (see \"Table 368 — General inline level structure types\"), or use of Ref in structure elements (see \"Table 355 — Entries in a structure element dictionary\").\nNOTE 4 Text that is labelled as a note – like this paragraph –but is intended to be normally read together with the enclosing content is not a footnote or endnote."
+      ]
+    ]
+  }
+}

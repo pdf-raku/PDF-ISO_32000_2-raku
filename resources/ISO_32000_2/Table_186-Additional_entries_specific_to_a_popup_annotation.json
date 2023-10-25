@@ -1,0 +1,27 @@
+{
+  "table": {
+    "caption": "Table 186 — Additional entries specific to a popup annotation",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Subtype",
+        "name",
+        "(Required) The type of annotation that this dictionary describes; is Popup for a popup annotation."
+      ],
+      [
+        "Parent",
+        "dictionary",
+        "(Optional; is an indirect reference) The parent annotation with which this popup annotation is associated.\nIf this entry is present, the parent annotation’s Contents, M, C, and T entries (see \"Table 170 — Entries in an appearance dictionary\") overrides those of the popup annotation itself.\nNOTE See also the Popup entry in \"Table 172 — Additional entries in an annotation dictionary specific to markup annotations\"."
+      ],
+      [
+        "Open",
+        "boolean",
+        "(Optional) A flag specifying whether the popup annotation shall initially be displayed open. Default value: false (closed)."
+      ]
+    ]
+  }
+}

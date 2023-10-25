@@ -1,0 +1,37 @@
+{
+  "table": {
+    "caption": "Table 277 — Entries common to all rendition dictionaries",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Optional) The type of PDF object that dictionary describes; if present, is Rendition for a rendition object."
+      ],
+      [
+        "S",
+        "name",
+        "(Required) The type of rendition that this dictionary describes. May be MR for media rendition or SR for selector rendition. The rendition is non-viable if the interactive PDF processor does not recognise the value of this entry."
+      ],
+      [
+        "N",
+        "text string",
+        "(Optional) A Unicode-encoded text string specifying the name of the rendition for use in a user interface and for name tree lookup by ECMAScript actions."
+      ],
+      [
+        "MH",
+        "dictionary",
+        "(Optional) A dictionary whose entries (see \"Table 278 — Entries in a rendition MH/BE dictionary\") is honoured for the rendition to be considered viable."
+      ],
+      [
+        "BE",
+        "dictionary",
+        "(Optional) A dictionary whose entries (see \"Table 278 — Entries in a rendition MH/BE dictionary\") is only be honoured in a \"best effort\" sense."
+      ]
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "table": {
+    "caption": "Table 311 — Entries in a 3D stream dictionary",
+    "head": [
+      "Key",
+      "Type",
+      "Value"
+    ],
+    "rows": [
+      [
+        "Type",
+        "name",
+        "(Optional) The type of PDF object that this dictionary describes; if present, is 3D for a 3D stream."
+      ],
+      [
+        "Subtype",
+        "name",
+        "(Required) A name specifying the format of the 3D data contained in the stream.\nThe following are the only recognised values:\nU3D which specifies the Universal 3D file format.\nPRC which specifies the PRC file format. (PDF 2.0)"
+      ],
+      [
+        "VA",
+        "array",
+        "(Optional) An array of 3D view dictionaries, each of which specifies a named preset view of this 3D artwork (see 13.6.4, \"3D views\")."
+      ],
+      [
+        "DV",
+        "(various)",
+        "(Optional) An object that specifies the default (initial) view of the 3D artwork. It may be a 3D view dictionary (see 13.6.4, \"3D views\") or one of the following types:\nDefault value: 0 (the first entry in the VA array) if VA is present; if VA is not present, the default view is specified within the 3D stream itself."
+      ],
+      [
+        "Resources",
+        "name tree",
+        "(Optional) A name tree that maps name strings to objects that may be used by applications or scripts to modify the default view of the 3D artwork.\nThe names in this name tree is text strings so as to be encoded in a way that will be accessible from ECMAScript."
+      ],
+      [
+        "OnInstantiate",
+        "stream",
+        "(Optional) An ECMAScript script that is executed when the 3D stream is instantiated."
+      ],
+      [
+        "AN",
+        "dictionary",
+        "(Optional; PDF 1.7) An animation style dictionary indicating the method that interactive PDF processors uses to drive keyframe animations present in this artwork (see 13.6.3.2, \"3D animation style dictionaries\").\nDefault value: an animation style dictionary whose Subtype entry has a value of None."
+      ],
+      [
+        "ColorSpace",
+        "name or array",
+        "(Optional, PDF 2.0) The RGB colour space in which the 3D artwork’s colour values are encoded. Valid values are the name DeviceRGB, an array specifying a valid CalRGB color space (see 8.6.5.3 \"CalRGB colour spaces\"), or an array specifying a valid RGB-based ICCBased color space (see 8.6.5.5 \"ICCBased colour spaces\"). If this key is not present, the colour space for the 3D artwork colour values are considered undefined and a PDF processor may choose any appropriate RGB-based colour space, such as sRGB."
+      ]
+    ]
+  }
+}

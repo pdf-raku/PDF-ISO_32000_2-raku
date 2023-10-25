@@ -1,0 +1,71 @@
+{
+  "table": {
+    "caption": "Table 140 — Variables used in the group compositing formulas",
+    "head": [
+      "Variable",
+      "Meaning"
+    ],
+    "rows": [
+      [
+        "\uD835\uDC38\uD835\uDC56",
+        "Element i of the group: a compound variable representing the element’s colour, shape, opacity, and blend mode"
+      ],
+      [
+        "\uD835\uDC53\uD835\uDC60\uD835\uDC56",
+        "Source shape for element Ei"
+      ],
+      [
+        "\uD835\uDC53\uD835\uDC57\uD835\uDC56",
+        "Object shape for element Ei"
+      ],
+      [
+        "\uD835\uDC53\uD835\uDC5A\uD835\uDC56",
+        "Mask shape for element Ei"
+      ],
+      [
+        "\uD835\uDC53\uD835\uDC58\uD835\uDC56",
+        "Constant shape for element Ei"
+      ],
+      [
+        "\uD835\uDC53\uD835\uDC54\uD835\uDC56",
+        "Group shape: the accumulated source shapes of group elements E1 to Ei, excluding the initial backdrop"
+      ],
+      [
+        "\uD835\uDC5E\uD835\uDC5A\uD835\uDC56",
+        "Mask opacity for element Ei"
+      ],
+      [
+        "\uD835\uDC5E\uD835\uDC58\uD835\uDC56",
+        "Constant opacity for element Ei"
+      ],
+      [
+        "\uD835\uDEFC\uD835\uDC60\uD835\uDC56",
+        "Source alpha for element Ei"
+      ],
+      [
+        "\uD835\uDEFC\uD835\uDC57\uD835\uDC56",
+        "Object alpha for element Ei : the product of its object shape and object opacity"
+      ],
+      [
+        "\uD835\uDEFC\uD835\uDC54\uD835\uDC56",
+        "Group alpha: the accumulated source alphas of group elements E1 to Ei, excluding the initial backdrop"
+      ],
+      [
+        "\uD835\uDEFC\uD835\uDC56",
+        "Accumulated alpha after compositing element Ei, including the initial backdrop"
+      ],
+      [
+        "\uD835\uDC50\uD835\uDC60\uD835\uDC56",
+        "Source colour for element Ei"
+      ],
+      [
+        "\uD835\uDC50\uD835\uDC56",
+        "Accumulated colour after compositing element Ei, including the initial backdrop"
+      ],
+      [
+        "Bi(ci−1,csi)",
+        "Blend function for element Ei"
+      ]
+    ]
+  }
+}

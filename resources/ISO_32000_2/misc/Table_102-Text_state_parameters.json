@@ -1,0 +1,47 @@
+{
+  "table": {
+    "caption": "Table 102 — Text state parameters",
+    "head": [
+      "Parameter",
+      "Description"
+    ],
+    "rows": [
+      [
+        "Tc",
+        "Character spacing"
+      ],
+      [
+        "Tw",
+        "Word spacing"
+      ],
+      [
+        "Th",
+        "Horizontal scaling"
+      ],
+      [
+        "Tl",
+        "Leading"
+      ],
+      [
+        "Tf",
+        "Text font"
+      ],
+      [
+        "Tfs",
+        "Text font size"
+      ],
+      [
+        "Tmode",
+        "Text rendering mode"
+      ],
+      [
+        "Trise",
+        "Text rise"
+      ],
+      [
+        "Tk",
+        "Text knockout"
+      ]
+    ]
+  }
+}
