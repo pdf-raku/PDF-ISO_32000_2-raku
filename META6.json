@@ -317,10 +317,10 @@
     "ISO_32000_2::Table_98-Entries_in_the_optional_content_properties_dictionary": "lib/ISO_32000_2/Table_98-Entries_in_the_optional_content_properties_dictionary.rakumod",
     "ISO_32000_2::Table_99-Entries_in_an_optional_content_configuration_dictionary": "lib/ISO_32000_2/Table_99-Entries_in_an_optional_content_configuration_dictionary.rakumod",
     "ISO_32000_2::Table_F1-Entries_in_the_linearization_parameter_dictionary": "lib/ISO_32000_2/Table_F1-Entries_in_the_linearization_parameter_dictionary.rakumod",
-    "PDF::ISO_32000": "lib/PDF/ISO_32000.rakumod"
+    "PDF::ISO_32000_2": "lib/PDF/ISO_32000_2.rakumod"
   },
   "resources": [
-    "ISO_32000-index.json",
+    "ISO_32000_2-index.json",
     "ISO_32000_2/misc/Table_1-White-space_characters.json",
     "ISO_32000_2/misc/Table_2-Delimiter_characters.json",
     "ISO_32000_2/misc/Table_3-Escape_sequences_in_literal_strings.json",
@@ -768,5 +768,5 @@
   ],
   "test-depends": [
   ],
-  "version": "0.0.13"
+  "version": "0.0.1"
 }

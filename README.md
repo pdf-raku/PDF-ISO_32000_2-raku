@@ -93,7 +93,7 @@ The following interface roles have been mined from the ISO-32000-2 specification
 ### Roles and Entries
 
 
-ISO_32000 Reference|Entries
+ISO_32000_2 Reference|Entries
 ----|-----
 [Table F.1 — Entries in the linearization parameter dictionary](lib/ISO_32000_2/Table_F1-Entries_in_the_linearization_parameter_dictionary.rakumod)|/Linearized /L /H /O /E /N /T /P
 [Table 5 — Entries common to all stream dictionaries](lib/ISO_32000_2/Table_5-Entries_common_to_all_stream_dictionaries.rakumod)|/Length /Filter /DecodeParms /F /FFilter /FDecodeParms /DL
@@ -403,7 +403,7 @@ ISO_32000 Reference|Entries
 
 ## Entry to role mappings
 
-Entry|ISO_32000 Roles
+Entry|ISO_32000_2 Roles
 ----|-----
 /3DA|[Table 309 — Additional entries specific to a 3D annotation](lib/ISO_32000_2/Table_309-Additional_entries_specific_to_a_ThreeD_annotation.rakumod) [Table 324 — Entries in an external data dictionary used to markup 3D annotations](lib/ISO_32000_2/Table_324-Entries_in_an_external_data_dictionary_used_to_markup_ThreeD_annotations.rakumod)
 /3DB|[Table 309 — Additional entries specific to a 3D annotation](lib/ISO_32000_2/Table_309-Additional_entries_specific_to_a_ThreeD_annotation.rakumod)
