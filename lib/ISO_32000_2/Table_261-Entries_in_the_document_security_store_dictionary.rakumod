@@ -5,13 +5,6 @@ role ISO_32000_2::Table_261-Entries_in_the_document_security_store_dictionary {
     method Certs {...};
     method OCSPs {...};
     method CRLs {...};
-    INIT {
-        for "aForADocumentSignatureOrDocumentTimestampSignatures,TheBytesThatAreHashedAreThoseOfTheCompleteHexadecimalString,IncludingZeroPadding,InTheContentsEntryOfTheAssociatedSignatureDictionary,ContainingTheSignature'sDER-encodedBinaryDataObject." {
-            my &m = method {...};
-            &m.set_name($_);
-            $?ROLE.^add_method($_, &m);
-        }
-    }
 }
 
 =begin pod
@@ -36,7 +29,5 @@ Table 261 — Entries in the document security store (DSS) dictionary
 
 =head2 CRLs [array]
 - (Optional) An array of indirect references to streams, each containing a DER-encoded Certificate Revocation List (CRL) (see Internet RFC 5280). This array contains CRLs that may be used in the validation of the signatures in the document.
-
-=head2 aForADocumentSignatureOrDocumentTimestampSignatures,TheBytesThatAreHashedAreThoseOfTheCompleteHexadecimalString,IncludingZeroPadding,InTheContentsEntryOfTheAssociatedSignatureDictionary,ContainingTheSignature'sDER-encodedBinaryDataObject. []
 
 =end pod

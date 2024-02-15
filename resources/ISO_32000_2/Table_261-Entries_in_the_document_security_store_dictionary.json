@@ -31,9 +31,6 @@
         "CRLs",
         "array",
         "(Optional) An array of indirect references to streams, each containing a DER-encoded Certificate Revocation List (CRL) (see Internet RFC 5280). This array contains CRLs that may be used in the validation of the signatures in the document."
-      ],
-      [
-        "a For a document signature or document timestamp signatures, the bytes that are hashed are those of the complete hexadecimal string, including zero padding, in the Contents entry of the associated signature dictionary, containing the signature's DER-encoded binary data object (e.g. CMS or CAdES objects)."
       ]
     ]
   }
