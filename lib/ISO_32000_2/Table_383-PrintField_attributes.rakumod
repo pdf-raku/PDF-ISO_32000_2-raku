@@ -1,14 +1,9 @@
 use v6;
 role ISO_32000_2::Table_383-PrintField_attributes {
     method Role {...};
+    method Checked {...};
+    method checked {...};
     method Desc {...};
-    INIT {
-        for "Checked,Checked" {
-            my &m = method {...};
-            &m.set_name($_);
-            $?ROLE.^add_method($_, &m);
-        }
-    }
 }
 
 =begin pod
@@ -31,7 +26,12 @@ NOTE 1 Examples include text edit fields, numeric fields, password fields, digit
 Semantic groupings of non-interactive form fields and associated content (for example, a set of radio button fields associated with a label) is enclosed within a Part structure element.
 Default value: None specified.
 
-=head2 Checked,Checked [name]
+=head2 Checked [name]
+- (Optional; not inheritable; PDF 1.7; lower case form is deprecated in PDF 2.0) The state of a radio button or check box field. The value is one of: on, off, or neutral.
+NOTE 2 In earlier versions of PDF the case (capitalization) used for this key did not conform to the same conventions used elsewhere in this standard.
+Default value: off.
+
+=head2 checked [name]
 - (Optional; not inheritable; PDF 1.7; lower case form is deprecated in PDF 2.0) The state of a radio button or check box field. The value is one of: on, off, or neutral.
 NOTE 2 In earlier versions of PDF the case (capitalization) used for this key did not conform to the same conventions used elsewhere in this standard.
 Default value: off.

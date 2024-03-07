@@ -376,7 +376,7 @@ ISO_32000_2 Reference|Entries
 [Table 380 — Standard layout attributes specific to inline-level structure elements](lib/ISO_32000_2/Table_380-Standard_layout_attributes_specific_to_inline-level_structure_elements.rakumod)|/BaselineShift /LineHeight /TextPosition /TextDecorationColor /TextDecorationThickness /TextDecorationType /RubyAlign /RubyPosition /GlyphOrientationVertical
 [Table 381 — Standard layout attributes specific to standard column attributes](lib/ISO_32000_2/Table_381-Standard_layout_attributes_specific_to_standard_column_attributes.rakumod)|/ColumnCount /ColumnGap /ColumnWidths
 [Table 382 — Standard list attributes](lib/ISO_32000_2/Table_382-Standard_list_attributes.rakumod)|/ListNumbering /ContinuedList /ContinuedFrom
-[Table 383 — PrintField attributes](lib/ISO_32000_2/Table_383-PrintField_attributes.rakumod)|/Role /Desc /Checked,Checked
+[Table 383 — PrintField attributes](lib/ISO_32000_2/Table_383-PrintField_attributes.rakumod)|/Role /Checked /checked /Desc
 [Table 384 — Standard table attributes](lib/ISO_32000_2/Table_384-Standard_table_attributes.rakumod)|/RowSpan /ColSpan /Headers /Scope /Summary /Short
 [Table 385 — Standard artifact attributes](lib/ISO_32000_2/Table_385-Standard_artifact_attributes.rakumod)|/Type /BBox /Subtype
 [Table 386 — Entries in the Web Capture information dictionary](lib/ISO_32000_2/Table_386-Entries_in_the_Web_Capture_information_dictionary.rakumod)|/V /C
@@ -525,7 +525,7 @@ Entry|ISO_32000_2 Roles
 /CharProcs|[Table 110 — Entries in a Type 3 font dictionary](lib/ISO_32000_2/Table_110-Entries_in_a_Type_3_font_dictionary.rakumod)
 /CharSet|[Table 120 — Entries common to all font descriptors](lib/ISO_32000_2/Table_120-Entries_common_to_all_font_descriptors.rakumod) [Table 239 — Additional entries specific to a submit-form action](lib/ISO_32000_2/Table_239-Additional_entries_specific_to_a_submit-form_action.rakumod)
 /CheckSum|[Table 45 — Entries in an embedded file parameter dictionary](lib/ISO_32000_2/Table_45-Entries_in_an_embedded_file_parameter_dictionary.rakumod) [Table 402 — Entries in a DestOutputProfileRef dictionary](lib/ISO_32000_2/Table_402-Entries_in_a_DestOutputProfileRef_dictionary.rakumod)
-/Checked,Checked|[Table 383 — PrintField attributes](lib/ISO_32000_2/Table_383-PrintField_attributes.rakumod)
+/Checked|[Table 383 — PrintField attributes](lib/ISO_32000_2/Table_383-PrintField_attributes.rakumod)
 /Child|[Table 159 — Entries in a folder dictionary](lib/ISO_32000_2/Table_159-Entries_in_a_folder_dictionary.rakumod)
 /ClassMap|[Table 354 — Entries in the structure tree root](lib/ISO_32000_2/Table_354-Entries_in_the_structure_tree_root.rakumod)
 /ClrF|[Table 249 — Entries in an FDF field dictionary](lib/ISO_32000_2/Table_249-Entries_in_an_FDF_field_dictionary.rakumod)
@@ -1169,6 +1169,7 @@ Entry|ISO_32000_2 Roles
 /blackPointCompensation|[Table 51 — Device-independent graphics state parameters](lib/ISO_32000_2/Table_51-Device-independent_graphics_state_parameters.rakumod)
 /blendMode|[Table 51 — Device-independent graphics state parameters](lib/ISO_32000_2/Table_51-Device-independent_graphics_state_parameters.rakumod)
 /ca|[Table 57 — Entries in a graphics state parameter dictionary](lib/ISO_32000_2/Table_57-Entries_in_a_graphics_state_parameter_dictionary.rakumod) [Table 166 — Entries common to all annotation dictionaries](lib/ISO_32000_2/Table_166-Entries_common_to_all_annotation_dictionaries.rakumod)
+/checked|[Table 383 — PrintField attributes](lib/ISO_32000_2/Table_383-PrintField_attributes.rakumod)
 /clippingPath|[Table 51 — Device-independent graphics state parameters](lib/ISO_32000_2/Table_51-Device-independent_graphics_state_parameters.rakumod)
 /color|[Table 51 — Device-independent graphics state parameters](lib/ISO_32000_2/Table_51-Device-independent_graphics_state_parameters.rakumod)
 /colorSpace|[Table 51 — Device-independent graphics state parameters](lib/ISO_32000_2/Table_51-Device-independent_graphics_state_parameters.rakumod)
