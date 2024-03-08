@@ -2,8 +2,11 @@ Revision history for PDF-ISO_32000_2
 
 {{$NEXT}}
 
+0.0.3  2024-03-08T17:23:16+13:00
+    - Rebuild with fix for Table-383 PrintField Attributes
+
 0.0.2  2024-02-19T15:39:12+13:00
-    - Fix for Table-261 generation.
+    - Rebuild with fix for Table-261 Document Security Store
 
 0.0.1  2024-02-15T15:54:37+13:00
     - Initial version
