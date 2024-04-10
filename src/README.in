@@ -7,8 +7,7 @@ The PDF 32000-2:2020 2.0 Specification contains around 440 tables, of which abou
 
 This module has been used to extract and generate the roles and classes from the PDF specification.
 
-PDF::Class currently uses [PDF::ISO_32000](https://pdf-raku.github.io/PDF-ISO_32000-raku), based on the PDF 32000-1:2008 1.7, but may potentially be upgraded
-to use this module, implementing the PDF 2.0 standard.
+PDF::Class uses this module plus [PDF::ISO_32000](https://pdf-raku.github.io/PDF-ISO_32000-raku), to support both the PDF 32000-1:2008 1.7 and  PDF  32000-2:2020 2.0 standards.
 
 This module contains:
 
@@ -67,6 +66,8 @@ at lib/Catalog.rakumod (Catalog):1
 ```
 
 ### Building this module
+
+The companion git repository git@github.com:pdf-raku/PDF-ISO_32000_2-Builder-raku.git is used to build this module. It will be cloned automatically. Please check this module's META6.json for any missing dependencies.
 
 Note that the `META6.json` and `README.md` are generated. Any edits
 the these files should be made to the sources `src/META6.in` and `src/README.in`, before building.
