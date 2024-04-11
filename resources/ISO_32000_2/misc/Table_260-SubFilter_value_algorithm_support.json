@@ -31,9 +31,6 @@
         "ANSI X9.62, Elliptic Curve Digital Signature Algorithm (ECDSA) (PDF 2.0)",
         "No",
         "No"
-      ],
-      [
-        "a Despite the appearance of sha1 in the name of this SubFilter value, supported encodings is not limited to the SHA-1 algorithm. The PKCS 1 object contains an identifier that indicates which algorithm is used.\nb Other digest algorithms may be used to digest the signed-data field; however, SHA-1 is used to digest the data that is being signed.\nc The values adbe.x509.rsa_sha1 and adbe.pkcs7.sha1 have been deprecated with PDF 2.0.\nd SHA1 has been deprecated with PDF 2.0."
       ]
     ]
   }

@@ -64,9 +64,6 @@
         "Vertical version of UniGB-UTF16-H"
       ],
       [
-        "Chinese (Traditional)"
-      ],
-      [
         "B5pc-H",
         "Mac OS, Big Five character set, Big Five encoding, Script Manager code 2"
       ],
@@ -121,9 +118,6 @@
       [
         "UniCNS-UTF16-V",
         "Vertical version of UniCNS-UTF16-H"
-      ],
-      [
-        "Japanese"
       ],
       [
         "83pv-RKSJ-H",
@@ -206,9 +200,6 @@
         "Vertical version of UniJIS-UTF16-H"
       ],
       [
-        "Korean"
-      ],
-      [
         "KSC-EUC-H",
         "KS X 1001:1992 character set, EUC-KR encoding"
       ],
@@ -251,9 +242,6 @@
       [
         "UniKS-UTF16-V",
         "Vertical version of UniKS-UTF16-H"
-      ],
-      [
-        "Generic"
       ],
       [
         "Identity-H",
