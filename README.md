@@ -67,7 +67,7 @@ at lib/Catalog.rakumod (Catalog):1
 
 ### Building this module
 
-The companion git repository [git@github.com:pdf-raku/PDF-ISO_32000_2-Builder-raku.git](git@github.com:pdf-raku/PDF-ISO_32000_2-Builder-raku.git) is used to build this module. You will need to obtain your own copy of the PDF 2.0 specification from https://pdfa.org/resource/iso-32000-pdf/. Please also check the builder's META6.json for any missing dependencies.
+The companion git repository [git@github.com:pdf-raku/PDF-ISO_32000_2-Builder-raku.git](git@github.com:pdf-raku/PDF-ISO_32000_2-Builder-raku.git) is used to build this module. For copyright reasons, you will need to obtain your own copy of the PDF 2.0 specification. A free personal copy may be obtained by registering at https://pdfa.org/resource/iso-32000-pdf/. Please also check the builder's META6.json for any missing dependencies.
 
 Note that the `META6.json` and `README.md` are generated. Any edits
 the these files should be made to the sources `src/META6.in` and `src/README.in`, before building.
