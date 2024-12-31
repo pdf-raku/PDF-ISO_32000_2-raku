@@ -26,4 +26,4 @@ jobs:
       - name: Install Dependencies
         run: zef install --deps-only .
       - name: Run Tests
-        run: prove6 -I. t
+        run: zef --verbose test .
